@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:layout_margin="4dp">
+
+
+
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.864"
+        tools:ignore="UnknownId" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:longClickable="true"
+            android:id="@+id/accountName"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:paddingTop="@dimen/_5sdp"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/paymentTypeImg"
+            android:layout_toLeftOf="@+id/img_tick"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:paddingTop="@dimen/_5sdp"
+            android:longClickable="true"
+            android:id="@+id/accountNumber"
+            android:textColor="@android:color/black"
+            android:text=""
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/paymentTypeImg"
+            android:layout_toLeftOf="@+id/img_tick"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_tick"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:src="@drawable/ic_delete_black_24dp"
+        android:contentDescription="@string/app_name"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

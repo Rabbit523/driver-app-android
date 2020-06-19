@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="@dimen/_124sdp"
+        android:layout_height="@dimen/_124sdp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_document_upload"
+        android:backgroundTint="@color/colorPrimary" />
+
+    <com.rapido.provider.Transportation.Utilities.MyTextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Veuillez envoyer votre document"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_13sdp" />
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/BtnUploadNow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+
+            android:layout_margin="@dimen/button_margin"
+            android:layout_weight="1"
+            android:background="@drawable/bggradient"
+            android:text="Upload Now"
+            android:textColor="@color/button_text_color" />
+
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/BtnCancel"
+            android:layout_margin="@dimen/button_margin"
+
+            android:text="@string/cancel"
+            android:textColor="@color/button_text_color"
+            android:background="@drawable/button_cancel_red"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp" />
+    </LinearLayout>
+
+</LinearLayout>

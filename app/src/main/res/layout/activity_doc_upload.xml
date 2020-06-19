@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="@dimen/_84sdp"
+            android:layout_height="@dimen/_84sdp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_document_upload"
+            android:backgroundTint="#8BC34A" />
+
+        <TextView
+            android:id="@+id/txtUploa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/please_upload_document"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_13sdp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recDoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingTop="@dimen/_7sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <!--<androidx.recyclerview.widget.RecyclerView-->
+            <!--android:id="@+id/rvDocList"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--</androidx.recyclerview.widget.RecyclerView>-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imgTest"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:text="Driving Licence"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btMotorInspectCertificate"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="@drawable/rounded_button"
+                    android:text="Browse"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/chkMotorInspectCertificate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Motor Vehicle Inspection Certificate"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imgMotorInspectCertificate"
+                    android:layout_width="@dimen/_48sdp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:text="Bank Passbook"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btPsvInsurenceCertificate"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="@drawable/rounded_button"
+                    android:text="Browse"
+                    android:textColor="@color/white" />
+
+
+                <CheckBox
+                    android:id="@+id/chkPsvInsurenceCertificate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="PSV Insurance Certificate"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imgPsvInsurenceCertificate"
+                    android:layout_width="@dimen/_48sdp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:text="Registration Certificate"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btGoodConduct"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="@drawable/rounded_button"
+                    android:text="Browse"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/chkGoodConduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Certificate Of Good Conduct"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imgGoodConduct"
+                    android:layout_width="@dimen/_48sdp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:text="Bank Information (Bank name and account number)"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btPSVLicense"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="@drawable/rounded_button"
+                    android:text="Browse"
+                    android:textColor="@color/white" />
+
+
+                <CheckBox
+                    android:id="@+id/chkPSVLicense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="PSV License"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imgPSVLicense"
+                    android:layout_width="@dimen/_48sdp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:text="National ID copy"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btpersonalId"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="@drawable/rounded_button"
+                    android:text="Browse"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/chkpersonalId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Nation ID / Passport"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imgPersonalId"
+                    android:layout_width="@dimen/_48sdp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:text="LogBook"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btPersonalPic"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="@drawable/rounded_button"
+                    android:text="Browse"
+                    android:textColor="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/chkPersonalPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Upload Log Book"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imgPersonal"
+                    android:layout_width="@dimen/_48sdp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/chkTerm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center|start"
+                android:text="I certify my all document is correct."
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/done_label"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/white"-->
+    <!--android:fillViewport="true"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/white"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<pl.droidsonroids.gif.GifImageView-->
+            <!--android:layout_width="@dimen/_84sdp"-->
+            <!--android:layout_height="@dimen/_84sdp"-->
+            <!--android:layout_gravity="center_horizontal|center_vertical"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="@drawable/ic_document_upload" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:gravity="center_horizontal|center_vertical"-->
+            <!--android:text="@string/please_upload_document"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--android:textSize="@dimen/_13sdp" />-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:paddingStart="@dimen/_15sdp"-->
+            <!--android:paddingTop="@dimen/_7sdp"-->
+            <!--android:paddingEnd="@dimen/_15sdp"-->
+            <!--android:paddingBottom="@dimen/_10sdp">-->
+
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_5sdp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="@dimen/_5sdp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center|start"-->
+                    <!--android:text="Driving License"-->
+                    <!--android:textColor="@color/black" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/btMotorInspectCertificate"-->
+                    <!--android:layout_width="@dimen/_60sdp"-->
+                    <!--android:layout_height="@dimen/_35sdp"-->
+                    <!--android:layout_marginEnd="@dimen/_5sdp"-->
+                    <!--android:background="@drawable/rounded_button"-->
+                    <!--android:text="Browse"-->
+                    <!--android:textColor="@color/white" />-->
+
+                <!--<CheckBox-->
+                    <!--android:id="@+id/chkMotorInspectCertificate"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:fontFamily="@font/montserrat_medium"-->
+                    <!--android:text="Motor Vehicle Inspection Certificate"-->
+                    <!--android:textSize="@dimen/_12sdp"-->
+                    <!--android:visibility="gone" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgMotorInspectCertificate"-->
+                    <!--android:layout_width="@dimen/_48sdp"-->
+                    <!--android:layout_height="@dimen/_48sdp"-->
+                    <!--android:visibility="gone" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_5sdp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="@dimen/_5sdp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center|start"-->
+                    <!--android:text="Vehicle Photo including plate number"-->
+                    <!--android:textColor="@color/black" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/btPsvInsurenceCertificate"-->
+                    <!--android:layout_width="@dimen/_60sdp"-->
+                    <!--android:layout_height="@dimen/_35sdp"-->
+                    <!--android:layout_marginEnd="@dimen/_5sdp"-->
+                    <!--android:background="@drawable/rounded_button"-->
+                    <!--android:text="Browse"-->
+                    <!--android:textColor="@color/white" />-->
+
+
+                <!--<CheckBox-->
+                    <!--android:id="@+id/chkPsvInsurenceCertificate"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:fontFamily="@font/montserrat_medium"-->
+                    <!--android:text="PSV Insurance Certificate"-->
+                    <!--android:textSize="@dimen/_12sdp"-->
+                    <!--android:visibility="gone" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgPsvInsurenceCertificate"-->
+                    <!--android:layout_width="@dimen/_48sdp"-->
+                    <!--android:layout_height="@dimen/_48sdp"-->
+                    <!--android:visibility="gone" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_5sdp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="@dimen/_5sdp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center|start"-->
+                    <!--android:text="Registration Certificate"-->
+                    <!--android:textColor="@color/black" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/btGoodConduct"-->
+                    <!--android:layout_width="@dimen/_60sdp"-->
+                    <!--android:layout_height="@dimen/_35sdp"-->
+                    <!--android:layout_marginEnd="@dimen/_5sdp"-->
+                    <!--android:background="@drawable/rounded_button"-->
+                    <!--android:text="Browse"-->
+                    <!--android:textColor="@color/white" />-->
+
+                <!--<CheckBox-->
+                    <!--android:id="@+id/chkGoodConduct"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:fontFamily="@font/montserrat_medium"-->
+                    <!--android:text="Certificate Of Good Conduct"-->
+                    <!--android:textSize="@dimen/_12sdp"-->
+                    <!--android:visibility="gone" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgGoodConduct"-->
+                    <!--android:layout_width="@dimen/_48sdp"-->
+                    <!--android:layout_height="@dimen/_48sdp"-->
+                    <!--android:visibility="gone" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_5sdp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="@dimen/_5sdp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center|start"-->
+                    <!--android:text="Bank Information (Bank name and account number)"-->
+                    <!--android:textColor="@color/black" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/btPSVLicense"-->
+                    <!--android:layout_width="@dimen/_60sdp"-->
+                    <!--android:layout_height="@dimen/_35sdp"-->
+                    <!--android:layout_marginEnd="@dimen/_5sdp"-->
+                    <!--android:background="@drawable/rounded_button"-->
+                    <!--android:text="Browse"-->
+                    <!--android:textColor="@color/white" />-->
+
+
+                <!--<CheckBox-->
+                    <!--android:id="@+id/chkPSVLicense"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:fontFamily="@font/montserrat_medium"-->
+                    <!--android:text="PSV License"-->
+                    <!--android:textSize="@dimen/_12sdp"-->
+                    <!--android:visibility="gone" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgPSVLicense"-->
+                    <!--android:layout_width="@dimen/_48sdp"-->
+                    <!--android:layout_height="@dimen/_48sdp"-->
+                    <!--android:visibility="gone" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_5sdp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="@dimen/_5sdp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center|start"-->
+                    <!--android:text="National ID copy"-->
+                    <!--android:textColor="@color/black" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/btpersonalId"-->
+                    <!--android:layout_width="@dimen/_60sdp"-->
+                    <!--android:layout_height="@dimen/_35sdp"-->
+                    <!--android:layout_marginEnd="@dimen/_5sdp"-->
+                    <!--android:background="@drawable/rounded_button"-->
+                    <!--android:text="Browse"-->
+                    <!--android:textColor="@color/white" />-->
+
+                <!--<CheckBox-->
+                    <!--android:id="@+id/chkpersonalId"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:fontFamily="@font/montserrat_medium"-->
+                    <!--android:text="Nation ID / Passport"-->
+                    <!--android:textSize="@dimen/_12sdp"-->
+                    <!--android:visibility="gone" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgPersonalId"-->
+                    <!--android:layout_width="@dimen/_48sdp"-->
+                    <!--android:layout_height="@dimen/_48sdp"-->
+                    <!--android:visibility="gone" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_5sdp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:visibility="gone">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="@dimen/_5sdp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center|start"-->
+                    <!--android:text="LogBook"-->
+                    <!--android:textColor="@color/black" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/btPersonalPic"-->
+                    <!--android:layout_width="@dimen/_60sdp"-->
+                    <!--android:layout_height="@dimen/_35sdp"-->
+                    <!--android:layout_marginEnd="@dimen/_5sdp"-->
+                    <!--android:background="@drawable/rounded_button"-->
+                    <!--android:text="Browse"-->
+                    <!--android:textColor="@color/white" />-->
+
+                <!--<CheckBox-->
+                    <!--android:id="@+id/chkPersonalPic"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:fontFamily="@font/montserrat_medium"-->
+                    <!--android:text="Upload Log Book"-->
+                    <!--android:textSize="@dimen/_12sdp"-->
+                    <!--android:visibility="gone" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgPersonal"-->
+                    <!--android:layout_width="@dimen/_48sdp"-->
+                    <!--android:layout_height="@dimen/_48sdp"-->
+                    <!--android:visibility="gone" />-->
+            <!--</LinearLayout>-->
+
+            <!--<CheckBox-->
+                <!--android:id="@+id/chkTerm"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_10sdp"-->
+                <!--android:fontFamily="@font/montserrat_medium"-->
+                <!--android:gravity="center|start"-->
+                <!--android:text="I certify my all document is correct."-->
+                <!--android:textColor="@color/colorPrimary" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btnDone"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="@dimen/_25sdp"-->
+            <!--android:layout_marginEnd="@dimen/_25sdp"-->
+            <!--android:layout_marginBottom="@dimen/_15sdp"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:fontFamily="@font/montserrat_semibold"-->
+            <!--android:text="@string/done_label"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="@dimen/_14sdp" />-->
+
+    <!--</LinearLayout>-->
+
+<!--</ScrollView>-->

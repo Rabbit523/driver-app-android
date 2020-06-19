@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="center"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:paddingTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radioBank"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Bank Account"/>
+        <RadioButton
+            android:id="@+id/radioPaypal"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Paypal Account"/>
+    </RadioGroup>
+    <LinearLayout
+        android:id="@+id/layoutbank"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <EditText
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:id="@+id/addBankName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cancel_text"
+
+        android:gravity="start"
+        android:padding="@dimen/_8sdp"
+        android:hint="@string/bank_name"
+        android:lines="1"
+        android:textSize="@dimen/_11sdp" />
+    <EditText
+        android:imeOptions="actionNext"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:id="@+id/addAccountNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cancel_text"
+        android:gravity="start"
+
+        android:padding="@dimen/_8sdp"
+        android:hint="@string/account_number"
+        android:lines="1"
+        android:textSize="@dimen/_11sdp" />
+    <EditText
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:id="@+id/addAccountName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cancel_text"
+
+        android:gravity="start"
+        android:padding="@dimen/_8sdp"
+        android:hint="@string/account_holder_name"
+        android:lines="1"
+        android:textSize="@dimen/_11sdp" />
+    <EditText
+        android:editable="false"
+        android:focusable="false"
+        android:imeOptions="actionDone"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:id="@+id/addCountryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cancel_text"
+        android:gravity="start"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/united_states"
+        android:lines="1"
+        android:textSize="@dimen/_11sdp" />
+    <EditText
+        android:editable="false"
+        android:focusable="false"
+        android:clickable="false"
+        android:imeOptions="actionDone"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cancel_text"
+        android:gravity="start"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/usd"
+        android:lines="1"
+        android:textSize="@dimen/_11sdp" />
+    <EditText
+        android:visibility="gone"
+        android:imeOptions="actionDone"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:id="@+id/addCountryCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cancel_text"
+        android:gravity="start"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/united_states"
+        android:editable="false"
+        android:focusable="false"
+        android:clickable="false"
+        android:lines="1"
+        android:textSize="@dimen/_11sdp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutPaypal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/paypalId"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:background="@drawable/cancel_text"
+            android:gravity="center_vertical"
+            android:imeOptions="actionDone"
+            android:lines="1"
+            android:hint="Enter Paypal Id"
+            android:paddingStart="@dimen/_10sdp"
+
+            android:textSize="@dimen/_11sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/addAccountDetailsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/add_account_"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <Button
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/cancelBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Cancel"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+   <!-- <tuamiprovider.Utilities.MyButton
+        android:layout_margin="@dimen/_25sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/addAccountDetailsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/add_account_details"
+        android:textSize="16sp" />-->
+
+
+    <!--<EditText
+            android:id="@+id/addBankName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cancel_text"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="start"
+            android:padding="@dimen/_5sdp"
+            android:hint="@string/account_holder_name"
+            android:lines="3"
+            android:textSize="@dimen/_11sdp" />-->
+
+
+</LinearLayout>

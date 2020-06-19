@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE resources [<!ENTITY appName "Ilyft Driver"><!ENTITY trip "trip"><!ENTITY trips "trips"><!ENTITY tripscap "Courses"><!ENTITY service "Service">]>
+
+<resources>
+    <!--<string name="app_name">mBeba Driver</string>-->
+    <string name="app_name">Rapido Chauffeur</string>
+    <string name="google_map_api">AIzaSyBOipH0Cumzp7CfWnJTZKGCpfKLiSamFGg</string>
+    <string name="facebook_app_id">999606467098695</string>
+    <string name="fb_login_protocol_scheme">fb999606467098695</string>
+
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">c87e74379e7589e13161616ca5b73020</string>
+
+    <!--Navigation Drawer -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="we_will_send_you_a_one_time_sms_message_carrier_rate_may_apply">We will send you a One time SMS message carrier rate may apply</string>
+
+    <string name="welcome_text">Rapido Support</string>
+    <string name="call_support">Appelez le Support</string>
+    <string name="chat_support">Mail Support</string>
+    <string name="weburl">Web Url</string>
+    <!--Nav items-->
+    <string name="cancel">Refuser</string>
+    <string name="total">Total</string>
+
+    <string name="online">Vous êtes en ligne</string>
+    <string name="offline">Vous êtes hors ligne</string>
+
+    <string name="trips">Courses</string>
+    <string name="earning">Revenu</string>
+
+
+    <string name="i_forgot_my_password">Oublié?</string>
+    <string name="resgist">Inscrivez-vous</string>
+
+    <string name="login">Login</string>
+    <string name="username">Nom et Prénom</string>
+    <string name="password">Mot de passe</string>
+    <!--Activity Register-->
+    <string name="dob">Date de naissance</string>
+    <!--Activity Email -->
+    <string name="sample_mail_id">name@examplecom</string>
+
+    <!--Activity Password -->
+
+    <string name="upload_all_documents_and_check_term"><![CDATA[Envoyez tous les documents et vérifiez les conditions générales]]></string>
+    <!--Activity Register-->
+    <string name="email">Email</string>
+    <string name="phone_number">Numéro Mobile</string>
+    <string name="first_name">Prénom</string>
+    <string name="password_txt">******</string>
+
+    <!-- Activity ForgetPassword -->
+    <string name="recover_password">Entrez votre e-mail pour récupération</string>
+
+    <!-- Coupon Fragment-->
+    <string name="enter_the_coupon">Entrez le code promo</string>
+
+    <!-- Edit Activity-->
+    <string name="update_success">Mise à jour du profil</string>
+
+
+    <!-- Home Fragment-->
+    <string name="where_to_go">Quel est le lieu de destination?</string>
+    <string name="selected_payment_mode">Espèces</string>
+
+
+    <string name="cancel_ride">Annuler &service;</string>
+
+
+    <!--Driver Accepted-->
+
+
+    <!--Payment Fragment-->
+    <string name="payment">Paiement</string>
+    <string name="payment_methods">Méthodes de paiement</string>
+    <string name="add_payments">Ajouter une carte pour les paiements</string>
+    <string name="are_you_sure">Etes-vous sûr de vouloir supprimer?</string>
+
+
+    <!--Status -->
+
+    <!--Your Trips-->
+    <string name="history">Historique</string>
+    <string name="comments">Commentaires</string>
+    <string name="no_trips">Vous n\'avez aucun course passé</string>
+
+    <string name="upcoming">Prochaine</string>
+    <string name="past">Précédente</string>
+
+
+    <!--Invoice -->
+
+
+    <string name="exit_confirm">Are you sure you want to logout?</string>
+
+
+    <!--Rate provider-->
+    <string name="write_your_comment">Donnez votre avis</string>
+
+
+    <!-- Source and destination-->
+    <string name="source_location">Votre emplacement</string>
+
+    <!--Show Dailog-->
+    <string name="connect_to_network">Se connecter au réseau internet ou quitter</string>
+    <string name="cencel_request">Êtes vous sûr de vouloir annuler la &service;?</string>
+    <string name="connect_to_wifi">Se connecter à Interne</string>
+    <string name="quit">Quitter</string>
+
+
+    <!-- Error Messages-->
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="something_went_wrong_net">Veuillez vérifier la connexion internet</string>
+    <string name="oops_connect_your_internet">Oops ! Connect your Internet</string>
+    <string name="server_down">Impossible de joindre le serveur</string>
+    <string name="please_try_again">Veuillez réessayer</string>
+    <string name="email_validation">Entrez votre mail</string>
+    <string name="not_valid_email">Votre mail non valide</string>
+    <string name="password_validation">Le mot de passe ne peut pas être laissé vide</string>
+    <string name="first_name_empty">Prénom requis</string>
+    <string name="mobile_number_empty">Numéro de mobile requis</string>
+    <string name="mobile_number_validation">e numéro de téléphone mobile doit comporter entre 10 et 20 chiffres</string>
+
+
+    <!--True or False -->
+    <string name="True">true</string>
+    <string name="False">false</string>
+
+
+    <!--Coupon Activity-->
+    <string name="not_vaild_coupon">Le coupon n\'est pas valide ou peut être expiré</string>
+    <string name="coupon_added">Coupon applied successfully</string>
+    <string name="add_coupon_txt">Ajouter un coupon</string>
+    <string name="added_coupon">Coupon est appliqué</string>
+    <string name="already_in_use_coupon">Coupon déjà utilisé</string>
+    <string name="expired_coupon">Désolé, le coupon a expiré</string>
+    <string name="off">OFF</string>
+    <string name="the_applied_coupon">Le code coupon appliqué est le suivant</string>
+    <string name="valid_until">Valable jusqu\'au</string>
+
+
+    <!--Wallet Activity-->
+
+
+    <!--Change Password-->
+    <string name="change_password_title">Changer le mot de passe</string>
+    <string name="current_password">Mot de passe actuel</string>
+    <string name="new_password">Nouveau mot de passe</string>
+    <string name="confirm_password">Confirmer le Nouveau mot de passe</string>
+    <string name="please_enter_current_pass">Veuillez entrer le mot de passe actuel</string>
+    <string name="please_enter_new_pass">Veuillez entrer un nouveau mot de passe</string>
+    <string name="please_enter_confirm_pass">Veuillez confirmer votre mot de passe</string>
+    <string name="different_passwords">Le mot de passe est erroné</string>
+
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="enter_mobile_no">Entrez le numéro de mobile</string>
+    <string name="pin_location">Fixez la localisation</string>
+
+    <!--Activity Help-->
+
+    <string name="complaint_not_empty">Complaint text not should be empty</string>
+    <string name="complaint_submitted">Your complaint submitted</string>
+
+    <string name="terms_of_Service">Terms of Service</string>
+    <string name="privacy_policy_">Privacy Policy</string>
+    <string name="legal">Legal</string>
+    <string name="about_page">It is a long established fact that a reader will be distracted by
+        the readable content of a page when looking at its layout. The point of using Lorem Ipsum
+        is that it has a more-or-less normal distribution of letters, as opposed to using
+        Various versions have evolved over the years, sometimes by accident,
+        sometimes on purpose (injected humour and the like).</string>
+
+
+    <!--Provider details-->
+    <!--Side Navigation Menu -->
+    <string name="home">Home</string>
+    <string name="mobile">Numéro de mobile</string>
+    <string name="your_trips">Mes Courses</string>
+    <string name="help">Support</string>
+    <!--<string name="earnings">Payments</string>-->
+    <string name="earnings">Mes revenus</string>
+    <string name="logout">Déconnexion</string>
+    <string name="valid_image">Aucune image trouvée</string>
+    <string name="user_no_mobile">Pas de numéro de mobile</string>
+    <string name="confirm_password_validation">Mot de passe incorrect</string>
+    <string name="confirm_validation">Confirmer le mot de passe doit être supérieur à 6</string>
+    <string name="new_validation">Le nouveau mot de passe doit être supérieur à 6</string>
+    <string name="note">Note : Veuillez saisir otp envoyé à votre adresse email enregistrée</string>
+    <string name="secrete_code">Entrer OTP</string>
+    <string name="reset_password">Réinitialiser le mot de passe</string>
+    <string name="cancel_confirm">Êtes-vous sûr de vouloir annuler la &trip;?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="no_services">Pas de services assignés</string>
+    <string name="commission">&service; frais</string>
+    <string name="no_comments">Aucun commentaire disponible</string>
+    <string name="base_price">Tarifs de base</string>
+    <string name="distance_price">Tarifs à distance</string>
+    <string name="sos_confirm">Vous êtes sûr de vouloir passer un appel d\'urgence?</string>
+    <string name="invoice">Facture</string>
+    <string name="pick_up">Lieu de ramassage </string>
+    <string name="drop_at">Lieu de dépôt </string>
+    <string name="reason_to_cancel">Raison de l\'annulation</string>
+    <string name="booking_id_colon">Réservation ID :</string>
+    <string name="booking_id">Réservation ID</string>
+    <string name="reason">Raison</string>
+    <string name="submit">Envoyer</string>
+    <string name="summary">Sommaire</string>
+    <string name="total_rides">TOTAL NO OF &tripscap;</string>
+    <string name="revenue">REVENUE</string>
+    <string name="schedule_rides">PLANIFIER &tripscap;</string>
+    <string name="canceled_rides">ANNULÉES &tripscap;</string>
+    <string name="rides">Courses</string>
+    <string name="upcoming_rides">Prochainement &trips;</string>
+    <string name="no_address">Aucune adresse disponible</string>
+    <string name="first_name_no_number">Le nom ne supporte pas les numéros</string>
+    <string name="password_size">La taille du mot de passe doit être au moins de 6</string>
+    <string name="sorry_for_inconvinent">Désolé pour la gêne occasionnée, nos chauffeurs sont occupés en ce moment</string>
+    <string name="no_rides">Aucun &trips; complété.</string>
+    <string name="rate_provider">Comment s\'est déroulée votre expérience</string>
+    <!--<string name="write_your_comment">Write your comment</string>-->
+    <!--Flow status -->
+    <string name="tap_when_arrived">DÉBUT DE COURSE</string>
+    <string name="tap_when_pickedup">RAMASSAGE</string>
+    <string name="tap_when_dropped">FIN DE COURSE</string>
+    <string name="tap_when_paid">CONFIRMER LE PAIEMENT</string>
+    <string name="rate_user">ENVOYEZ</string>
+
+    <string name="waitingForApproval">Veuillez nous accorder 1 jour ouvrable pour examiner votre profil.</string>
+
+    <string name="earned_amount">Argent gagné</string>
+    <string name="withdraw">Retrait</string>
+    <string name="add">Ajouter</string>
+    <string name="add_account_">Ajouter un compte</string>
+    <string name="add_account_details">Add Account Detail</string>
+    <string name="account_holder_name">Account Holder Name</string>
+    <string name="account_number">Account Number</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="add_bank_account">Add Bank Account</string>
+    <string name="bank_details">Your Account Details</string>
+    <string name="earned_money">Available Fund:</string>
+    <string name="status">Status</string>
+    <string name="past_withdraw">Past Withdraw</string>
+    <string name="withdraw_amount">Withdraw Amount</string>
+    <string name="select_account">Select Account</string>
+    <string name="not_added_bank_details_yet">Bank Details not found</string>
+    <!-- Error Messages-->
+    <string name="start_ride">Démarrer &trip;</string>
+
+
+    <!--Approval status-->
+    <string name="approved">Approuvé</string>
+    <string name="banned">Bloqué</string>
+    <string name="notifications">Notification</string>
+    <string name="waiting_for_approval">En attente de validation</string>
+
+    <string name="united_states">United States</string>
+    <string name="usd">USD</string>
+    <string name="account_names">Account Name:</string>
+    <string name="bank_names">Bank Name:</string>
+    <string name="account_numbers">Account Number:</string>
+    <string name="routing_numbers">Routing Number:</string>
+    <string name="countrys">Country:</string>
+    <string name="karahi_panner">Karahi Panner</string>
+    <string name="t_1">1</string>
+    <string name="x">x</string>
+    <string name="_90">$90</string>
+    <!--Wallet Fragment-->
+    <string name="you_not_have_an_account">You can\'t add more then one bank account</string>
+    <string name="fifteen_days">We Will process your amount with in 15 days</string>
+    <!--Offline Activity -->
+    <string name="go_online">GO ONLINE</string>
+
+    <string name="date">Date</string>
+    <string name="time">Temp</string>
+    <string name="amount">Montant</string>
+    <string name="edit">Edit</string>
+    <string name="review">Avis</string>
+    <string name="documents">Documents</string>
+    <string name="edit_profile">Modifier le profil</string>
+    <string name="you_are_on_the_way">Vous êtes en route</string>
+    <string name="you_have_to_reach_picked_up">Vous devez atteindre le lieu de ramassage</string>
+    <string name="on_the_way_of_drop_off">Sur le chemin du dépôt</string>
+
+    <string name="change_language">Change Language</string>
+    <string name="english">English</string>
+    <string name="arbic">عربى</string>
+    <string name="settings">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="please_upload_your_document">Veuillez envoyer votre document</string>
+    <string name="user">User</string>
+    <string name="driver">Login</string>
+    <string name="please_upload_document">Veuillez envoyer votre document</string>
+    <string name="default_notification_channel_id">10001</string>
+
+    <string name="andwhy">Dites-nous pourquoi vous voulez annuler?</string>
+    <string name="my_reason_is_not_listed">Ma raison ne figure pas dans la liste</string>
+    <string name="booked_another_cab">Aucun chauffeur disponible</string>
+    <string name="plan_changed">Je n\'ai plus besoin de me déplacer</string>
+    <string name="please_select_reason">Veuillez sélectionner la raison</string>
+    <string name="please_specify_reason">Veuillez préciser la raison</string>
+</resources>

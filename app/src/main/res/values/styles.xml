@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="otpViewStyle">@style/OtpWidget.OtpView</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:listPreferredItemHeightSmall">@dimen/_40sdp</item>
+        <item name="android:fontFamily">fonts/ClanPro-NarrBook.otf</item>
+    </style>
+
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/colorPrimary</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/colorPrimary
+        </item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/colorPrimary
+        </item>
+    </style>
+
+    <!-- Base application theme. -->
+
+    <style name="CustomCirclePageIndicator">
+        <item name="pageColor">@color/white</item>
+        <item name="fillColor">@color/colorPrimary</item>
+        <item name="strokeColor">@color/white</item>
+        <item name="strokeWidth">.5dp</item>
+        <item name="radius">4dp</item>
+        <item name="centered">true</item>
+    </style>
+
+    <style name="CustomFbStyle" parent="Theme.AccountKit">
+        <item name="colorPrimary">#9b59b6</item>
+        <item name="colorPrimaryDark">#9b59b6</item>
+    </style>
+
+    <style name="dialog_animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+
+    <style name="Theme_Dialog" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+
+    <style name="SwitchTheme" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color  -->
+        <item name="colorControlActivated">#00B22D</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#00B22D</item>
+
+        <item name="android:colorForeground">#FF0000</item>
+        <item name="android:background">#FF0000</item>
+    </style>
+</resources>

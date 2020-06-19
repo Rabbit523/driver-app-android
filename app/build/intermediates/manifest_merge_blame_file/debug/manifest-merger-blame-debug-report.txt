@@ -1,0 +1,953 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.rapido.provider"
+4    android:versionCode="3"
+5    android:versionName="1.0.0.2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml
+10    <!-- To auto-complete the email text field in the login form with the user's emails -->
+11    <permission
+11-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:6:5-8:47
+12        android:name="com.rapido.provider.permission.MAPS_RECEIVE"
+12-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:7:9-67
+13        android:protectionLevel="signature" />
+13-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:8:9-44
+14
+15    <uses-feature
+15-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:10:5-12:35
+16        android:glEsVersion="0x00020000"
+16-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:11:9-41
+17        android:required="true" />
+17-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:12:9-32
+18
+19    <uses-permission android:name="com.mbeba.provider.mapfragment.permission.MAPS_RECEIVE" />
+19-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:14:5-94
+19-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:14:22-91
+20    <uses-permission android:name="android.permission.INTERNET" />
+20-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:15:5-67
+20-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:15:22-64
+21    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+21-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:16:5-79
+21-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:16:22-76
+22    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+22-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:17:5-81
+22-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:17:22-78
+23    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+23-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:18:5-80
+23-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:18:22-77
+24    <uses-permission android:name="com.google.android.provider.gsf.permission.READ_GSERVICES" />
+24-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:19:5-97
+24-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:19:22-94
+25    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+25-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:21:5-81
+25-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:21:22-78
+26    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+26-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:22:5-79
+26-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:22:22-76
+27    <uses-permission android:name="android.permission.CALL_PHONE" />
+27-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:23:5-69
+27-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:23:22-66
+28    <uses-permission android:name="android.permission.CAMERA" />
+28-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:24:5-65
+28-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:24:22-62
+29    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+29-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:25:5-76
+29-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:25:22-73
+30    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+30-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:26:5-86
+30-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:26:22-83
+31    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+31-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:27:5-71
+31-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:27:22-68
+32    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+32-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:28:5-74
+32-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:28:22-71
+33    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+33-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:29:5-75
+33-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:29:22-72
+34    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+34-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:30:5-77
+34-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:30:22-74
+35    <uses-permission android:name="android.permission.WAKE_LOCK" />
+35-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:31:5-67
+35-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:31:22-65
+36
+37    <uses-feature android:name="android.hardware.camera" />
+37-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:32:5-60
+37-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:32:19-57
+38
+39    <uses-permission android:name="android.permission.VIBRATE" /> <!-- Required by older versions of Google Play services to create GCM registration tokens -->
+39-->[com.github.citux:datetimepicker:0.3.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/4ab8a1489060208f669e5644d6871154/jetified-datetimepicker-0.3.0/AndroidManifest.xml:24:5-66
+39-->[com.github.citux:datetimepicker:0.3.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/4ab8a1489060208f669e5644d6871154/jetified-datetimepicker-0.3.0/AndroidManifest.xml:24:22-63
+40    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+40-->[com.google.android.gms:play-services-gcm:17.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/2f9bfee8e0baa6e39d04e285edd5b6cb/play-services-gcm-17.0.0/AndroidManifest.xml:23:5-82
+40-->[com.google.android.gms:play-services-gcm:17.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/2f9bfee8e0baa6e39d04e285edd5b6cb/play-services-gcm-17.0.0/AndroidManifest.xml:23:22-79
+41    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+41-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:26:5-110
+41-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:26:22-107
+42
+43    <application
+43-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:34:5-303:19
+44        android:name="com.rapido.provider.Transportation.Helper.Ilyft"
+44-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:35:9-71
+45        android:allowBackup="false"
+45-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:36:9-36
+46        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+46-->[androidx.core:core:1.1.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/16070a4542adf0185576c75da89d6d9e/core-1.1.0/AndroidManifest.xml:24:18-86
+47        android:debuggable="true"
+48        android:fullBackupContent="false"
+48-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:37:9-42
+49        android:hardwareAccelerated="true"
+49-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:38:9-43
+50        android:icon="@mipmap/ic_launcher"
+50-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:39:9-43
+51        android:label="@string/app_name"
+51-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:40:9-41
+52        android:largeHeap="true"
+52-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:41:9-33
+53        android:networkSecurityConfig="@xml/network_security_config"
+53-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:46:9-69
+54        android:supportsRtl="true"
+54-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:42:9-35
+55        android:testOnly="true"
+56        android:theme="@style/AppTheme"
+56-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:43:9-40
+57        android:usesCleartextTraffic="true" >
+57-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:44:9-44
+58        <activity
+58-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:49:9-58:20
+59            android:name="com.rapido.provider.Transportation.Activities.NotificationTab"
+59-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:49:19-95
+60            android:configChanges="orientation|keyboardHidden|screenSize"
+60-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:50:13-74
+61            android:theme="@style/AppTheme.NoActionBar" >
+61-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:52:13-56
+62            <intent-filter>
+62-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:53:13-57:29
+63                <action android:name="com.quickridejadriver.provider.TARGETNOTIFICATION" />
+63-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:54:17-91
+63-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:54:25-89
+64
+65                <category android:name="android.intent.category.DEFAULT" />
+65-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:56:17-76
+65-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:56:27-73
+66            </intent-filter>
+67        </activity>
+68        <activity android:name="com.rapido.provider.Transportation.Activities.DocUploadActivity" />
+68-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:59:9-100
+68-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:59:19-97
+69
+70        <uses-library
+70-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:61:9-63:40
+71            android:name="org.apache.http.legacy"
+71-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:62:13-50
+72            android:required="false" />
+72-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:63:13-37
+73
+74        <activity
+74-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:64:9-67:59
+75            android:name="com.rapido.provider.Transportation.Activities.WithdrawActivity"
+75-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:65:13-90
+76            android:screenOrientation="portrait"
+76-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:66:13-49
+77            android:theme="@style/AppTheme.NoActionBar" />
+77-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:67:13-56
+78        <activity
+78-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:68:9-71:59
+79            android:name="com.rapido.provider.Transportation.Activities.OtpVerification"
+79-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:69:13-89
+80            android:screenOrientation="portrait"
+80-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:70:13-49
+81            android:theme="@style/AppTheme.NoActionBar" />
+81-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:71:13-56
+82        <activity
+82-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:72:9-76:59
+83            android:name="com.rapido.provider.Transportation.Activities.WithdrawAmountActivity"
+83-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:73:13-96
+84            android:screenOrientation="portrait"
+84-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:74:13-49
+85            android:theme="@style/AppTheme.NoActionBar"
+85-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:76:13-56
+86            android:windowSoftInputMode="stateHidden|adjustPan" />
+86-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:75:13-64
+87        <activity android:name="com.rapido.provider.Transportation.Activities.DocumentStatus" />
+87-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:77:9-97
+87-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:77:19-94
+88        <activity
+88-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:78:9-86:20
+89            android:name="com.rapido.provider.Transportation.Activities.SplashScreen"
+89-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:79:13-86
+90            android:theme="@style/AppTheme.NoActionBar" >
+90-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:80:13-56
+91            <intent-filter>
+91-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:81:13-85:29
+92                <action android:name="android.intent.action.MAIN" />
+92-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:82:17-69
+92-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:82:25-66
+93
+94                <category android:name="android.intent.category.LAUNCHER" />
+94-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:84:17-77
+94-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:84:27-74
+95            </intent-filter>
+96        </activity>
+97        <activity
+97-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:87:9-89:59
+98            android:name="com.rapido.provider.Login"
+98-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:88:13-53
+99            android:theme="@style/AppTheme.NoActionBar" />
+99-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:89:13-56
+100        <activity
+100-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:90:9-92:59
+101            android:name="com.rapido.provider.Transportation.Activities.FullImage"
+101-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:91:13-83
+102            android:theme="@style/AppTheme.NoActionBar" />
+102-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:92:13-56
+103        <activity
+103-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:93:9-96:59
+104            android:name="com.rapido.provider.SignUp"
+104-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:94:13-54
+105            android:screenOrientation="portrait"
+105-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:95:13-49
+106            android:theme="@style/AppTheme.NoActionBar" />
+106-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:96:13-56
+107        <activity
+107-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:97:9-104:20
+108            android:name="com.rapido.provider.Transportation.chat.UserChatActivity"
+108-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:98:13-84
+109            android:screenOrientation="portrait"
+109-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:100:13-49
+110            android:theme="@style/AppTheme.NoActionBar"
+110-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:101:13-56
+111            android:windowSoftInputMode="adjustResize" >
+111-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:102:13-55
+112        </activity>
+113        <activity
+113-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:105:9-108:59
+114            android:name="com.rapido.provider.Transportation.Activities.UserReview"
+114-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:106:13-84
+115            android:screenOrientation="portrait"
+115-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:107:13-49
+116            android:theme="@style/AppTheme.NoActionBar" />
+116-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:108:13-56
+117        <activity
+117-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:109:9-112:59
+118            android:name="com.rapido.provider.ForgotPassword"
+118-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:110:13-62
+119            android:screenOrientation="portrait"
+119-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:111:13-49
+120            android:theme="@style/AppTheme.NoActionBar" /> <!-- Book&amp;WinProvider -->
+120-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:112:13-56
+121        <meta-data
+121-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:113:9-115:54
+122            android:name="com.google.android.geo.API_KEY"
+122-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:114:13-58
+123            android:value="@string/google_map_api" />
+123-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:115:13-51
+124
+125        <!-- <activity -->
+126        <!-- android:name="com.facebook.FacebookActivity" -->
+127        <!-- android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" -->
+128        <!-- android:label="@string/app_name" -->
+129        <!-- android:screenOrientation="portrait" /> -->
+130        <activity
+130-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:122:9-126:59
+131            android:name="com.rapido.provider.Transportation.Activities.Payment"
+131-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:123:13-62
+132            android:label="@string/app_name"
+132-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:124:13-45
+133            android:screenOrientation="portrait"
+133-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:125:13-49
+134            android:theme="@style/AppTheme.NoActionBar" />
+134-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:126:13-56
+135        <activity
+135-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:127:9-131:58
+136            android:name="com.rapido.provider.Transportation.Activities.MainActivity"
+136-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:128:13-86
+137            android:label="@string/app_name"
+137-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:129:13-45
+138            android:theme="@style/AppTheme.NoActionBar"
+138-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:130:13-56
+139            android:windowSoftInputMode="adjustResize" />
+139-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:131:13-55
+140        <activity
+140-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:132:9-137:57
+141            android:name="com.rapido.provider.Transportation.Activities.EditProfile"
+141-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:133:13-85
+142            android:label="@string/app_name"
+142-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:134:13-45
+143            android:screenOrientation="portrait"
+143-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:135:13-49
+144            android:theme="@style/AppTheme.NoActionBar"
+144-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:136:13-56
+145            android:windowSoftInputMode="stateHidden" />
+145-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:137:13-54
+146        <activity
+146-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:138:9-143:57
+147            android:name="com.rapido.provider.Transportation.Activities.ShowProfile"
+147-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:139:13-85
+148            android:label="@string/app_name"
+148-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:140:13-45
+149            android:screenOrientation="portrait"
+149-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:141:13-49
+150            android:theme="@style/AppTheme.NoActionBar"
+150-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:142:13-56
+151            android:windowSoftInputMode="stateHidden" />
+151-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:143:13-54
+152        <activity
+152-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:144:9-149:58
+153            android:name="com.rapido.provider.Transportation.Activities.HistoryDetails"
+153-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:145:13-88
+154            android:label="@string/app_name"
+154-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:146:13-45
+155            android:screenOrientation="portrait"
+155-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:147:13-49
+156            android:theme="@style/AppTheme.NoActionBar"
+156-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:148:13-56
+157            android:windowSoftInputMode="adjustResize" />
+157-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:149:13-55
+158        <activity
+158-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:150:9-153:52
+159            android:name="com.rapido.provider.Transportation.Activities.HistoryActivity"
+159-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:151:13-89
+160            android:label="Historique"
+160-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:152:13-39
+161            android:screenOrientation="portrait" />
+161-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:153:13-49
+162        <activity
+162-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:154:9-157:57
+163            android:name="com.rapido.provider.Transportation.Activities.CouponActivity"
+163-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:155:13-88
+164            android:label="Coupon"
+164-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:156:13-35
+165            android:windowSoftInputMode="stateHidden" />
+165-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:157:13-54
+166        <activity
+166-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:158:9-163:58
+167            android:name="com.rapido.provider.Transportation.Activities.ChangePassword"
+167-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:159:13-88
+168            android:label="@string/app_name"
+168-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:160:13-45
+169            android:screenOrientation="portrait"
+169-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:161:13-49
+170            android:theme="@style/AppTheme.NoActionBar"
+170-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:162:13-56
+171            android:windowSoftInputMode="adjustResize" />
+171-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:163:13-55
+172        <activity
+172-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:164:9-169:58
+173            android:name="com.rapido.provider.Transportation.Activities.CustomGooglePlacesSearch"
+173-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:165:13-98
+174            android:label="@string/app_name"
+174-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:166:13-45
+175            android:screenOrientation="portrait"
+175-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:167:13-49
+176            android:theme="@style/AppTheme.NoActionBar"
+176-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:168:13-56
+177            android:windowSoftInputMode="adjustResize" /> <!-- Firebase Notifications -->
+177-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:169:13-55
+178        <service android:name="com.rapido.provider.Transportation.FCM.MyFirebaseMessagingService" >
+178-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:170:9-174:19
+178-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:170:18-98
+179            <intent-filter>
+179-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:171:13-173:29
+180                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+180-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:172:17-78
+180-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:172:25-75
+181            </intent-filter>
+182        </service>
+183
+184        <meta-data
+184-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:175:9-177:70
+185            android:name="com.google.firebase.messaging.default_notification_channel_id"
+185-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:176:13-89
+186            android:value="@string/default_notification_channel_id" />
+186-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:177:13-68
+187
+188        <receiver android:name="com.rapido.provider.Transportation.FCM.MyBroadcastReceiver" />
+188-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:179:9-104
+188-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:179:19-92
+189
+190        <meta-data
+190-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:181:9-183:48
+191            android:name="com.facebook.accountkit.ApplicationName"
+191-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:182:13-67
+192            android:value="@string/app_name" />
+192-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:183:13-45
+193        <meta-data
+193-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:186:9-187:54
+194            android:name="com.facebook.sdk.ApplicationId"
+194-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:186:20-65
+195            android:value="@string/facebook_app_id" />
+195-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:187:13-52
+196
+197        <activity
+197-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:189:9-192:48
+198            android:name="com.facebook.FacebookActivity"
+198-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:189:19-63
+199            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+199-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:190:13-114
+200            android:label="@string/app_name"
+200-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:192:13-45
+201            android:theme="@style/com_facebook_activity_theme" />
+201-->[com.facebook.android:facebook-common:5.8.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/6ca055274c9379a5025b180694765c1e/jetified-facebook-common-5.8.0/AndroidManifest.xml:32:13-63
+202        <activity
+202-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:193:9-202:20
+203            android:name="com.facebook.CustomTabActivity"
+203-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:194:13-58
+204            android:exported="true" >
+204-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:195:13-36
+205            <intent-filter>
+205-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:196:13-201:29
+206                <action android:name="android.intent.action.VIEW" />
+206-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:197:17-69
+206-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:197:25-66
+207
+208                <category android:name="android.intent.category.DEFAULT" />
+208-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:56:17-76
+208-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:56:27-73
+209                <category android:name="android.intent.category.BROWSABLE" />
+209-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:199:17-78
+209-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:199:27-75
+210
+211                <data android:scheme="@string/fb_login_protocol_scheme" />
+211-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:200:17-75
+211-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:200:23-72
+212            </intent-filter>
+213        </activity>
+214
+215        <meta-data
+215-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:207:9-209:64
+216            android:name="com.facebook.accountkit.ClientToken"
+216-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:208:13-63
+217            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+217-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:209:13-61
+218
+219        <activity
+219-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:211:9-215:45
+220            android:name="com.facebook.accountkit.ui.AccountKitActivity"
+220-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:212:13-73
+221            android:label="@string/com_accountkit_button_log_in"
+221-->[com.facebook.android:account-kit-sdk:5.4.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/4393b289f1fd4de382c140884c78fd1d/jetified-account-kit-sdk-5.4.0/AndroidManifest.xml:31:13-65
+222            android:launchMode="singleTop"
+222-->[com.facebook.android:account-kit-sdk:5.4.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/4393b289f1fd4de382c140884c78fd1d/jetified-account-kit-sdk-5.4.0/AndroidManifest.xml:32:13-43
+223            android:screenOrientation="portrait"
+223-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:213:13-49
+224            android:theme="@style/CustomFbStyle"
+224-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:214:13-49
+225            android:windowSoftInputMode="adjustResize" />
+225-->[com.facebook.android:account-kit-sdk:5.4.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/4393b289f1fd4de382c140884c78fd1d/jetified-account-kit-sdk-5.4.0/AndroidManifest.xml:34:13-55
+226
+227        <meta-data
+227-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:217:9-219:72
+228            android:name="io.fabric.ApiKey"
+228-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:218:13-44
+229            android:value="382cf003634c80b059946b0cd12ecd9c215c37da" />
+229-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:219:13-69
+230
+231        <activity
+231-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:221:9-225:59
+232            android:name="com.rapido.provider.Transportation.Activities.SosCallActivity"
+232-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:222:13-89
+233            android:hardwareAccelerated="false"
+233-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:223:13-48
+234            android:screenOrientation="portrait"
+234-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:224:13-49
+235            android:theme="@style/AppTheme.NoActionBar" />
+235-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:225:13-56
+236        <activity
+236-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:226:9-230:59
+237            android:name="com.rapido.provider.Transportation.Activities.ComplaintsAcivity"
+237-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:227:13-91
+238            android:hardwareAccelerated="false"
+238-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:228:13-48
+239            android:screenOrientation="portrait"
+239-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:229:13-49
+240            android:theme="@style/AppTheme.NoActionBar" />
+240-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:230:13-56
+241        <activity
+241-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:231:9-234:59
+242            android:name="com.rapido.provider.Transportation.Activities.LegalActivity"
+242-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:232:13-87
+243            android:hardwareAccelerated="false"
+243-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:233:13-48
+244            android:theme="@style/AppTheme.NoActionBar" />
+244-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:234:13-56
+245        <activity
+245-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:235:9-239:59
+246            android:name="com.rapido.provider.Transportation.Activities.TermsOfUseActivity"
+246-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:236:13-92
+247            android:hardwareAccelerated="false"
+247-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:237:13-48
+248            android:screenOrientation="portrait"
+248-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:238:13-49
+249            android:theme="@style/AppTheme.NoActionBar" />
+249-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:239:13-56
+250        <activity
+250-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:240:9-244:59
+251            android:name="com.rapido.provider.Transportation.Activities.PrivacyPolicyActivity"
+251-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:241:13-95
+252            android:hardwareAccelerated="false"
+252-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:242:13-48
+253            android:screenOrientation="portrait"
+253-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:243:13-49
+254            android:theme="@style/AppTheme.NoActionBar" />
+254-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:244:13-56
+255        <activity
+255-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:245:9-249:59
+256            android:name="com.rapido.provider.Transportation.Activities.UpdateProfile"
+256-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:246:13-87
+257            android:hardwareAccelerated="false"
+257-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:247:13-48
+258            android:screenOrientation="portrait"
+258-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:248:13-49
+259            android:theme="@style/AppTheme.NoActionBar" />
+259-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:249:13-56
+260        <activity
+260-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:250:9-255:58
+261            android:name="com.rapido.provider.Transportation.Activities.WaitingForApproval"
+261-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:251:13-92
+262            android:label="@string/app_name"
+262-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:252:13-45
+263            android:screenOrientation="portrait"
+263-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:253:13-49
+264            android:theme="@style/AppTheme.NoActionBar"
+264-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:254:13-56
+265            android:windowSoftInputMode="adjustResize" />
+265-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:255:13-55
+266        <activity
+266-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:256:9-260:59
+267            android:name="com.rapido.provider.Transportation.Activities.FavouritePlaceSearch"
+267-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:257:13-94
+268            android:hardwareAccelerated="false"
+268-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:258:13-48
+269            android:screenOrientation="portrait"
+269-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:259:13-49
+270            android:theme="@style/AppTheme.NoActionBar" />
+270-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:260:13-56
+271        <activity
+271-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:261:9-265:59
+272            android:name="com.rapido.provider.OtpVerifyForgetPassword"
+272-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:262:13-71
+273            android:configChanges="orientation|keyboardHidden"
+273-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:263:13-63
+274            android:screenOrientation="portrait"
+274-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:264:13-49
+275            android:theme="@style/AppTheme.NoActionBar" />
+275-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:265:13-56
+276        <activity
+276-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:266:9-270:59
+277            android:name="com.rapido.provider.Transportation.Activities.DocumentUpload"
+277-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:267:13-88
+278            android:configChanges="orientation|keyboardHidden"
+278-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:268:13-63
+279            android:screenOrientation="portrait"
+279-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:269:13-49
+280            android:theme="@style/AppTheme.NoActionBar" />
+280-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:270:13-56
+281
+282        <service
+282-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:272:9-277:19
+283            android:name="com.rapido.provider.Transportation.Service.StatusCheckServie"
+283-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:273:13-88
+284            android:enabled="true"
+284-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:274:13-35
+285            android:exported="false"
+285-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:275:13-37
+286            android:process=":ServiceProcess" >
+286-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:276:13-46
+287        </service>
+288
+289        <activity
+289-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:279:9-283:59
+290            android:name="com.rapido.provider.Transportation.Activities.TrackActivity"
+290-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:280:13-87
+291            android:configChanges="orientation|keyboardHidden"
+291-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:281:13-63
+292            android:screenOrientation="portrait"
+292-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:282:13-49
+293            android:theme="@style/AppTheme.NoActionBar" />
+293-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:283:13-56
+294        <activity
+294-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:284:9-287:59
+295            android:name="com.rapido.provider.Transportation.Activities.Profile"
+295-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:285:13-81
+296            android:configChanges="orientation|keyboardHidden"
+296-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:286:13-63
+297            android:theme="@style/AppTheme.NoActionBar" />
+297-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:287:13-56
+298        <activity
+298-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:288:9-292:59
+299            android:name="com.rapido.provider.Transportation.Activities.EarningActivity"
+299-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:289:13-89
+300            android:configChanges="orientation|keyboardHidden"
+300-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:290:13-63
+301            android:screenOrientation="portrait"
+301-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:291:13-49
+302            android:theme="@style/AppTheme.NoActionBar" />
+302-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:292:13-56
+303
+304        <provider
+305            android:name="androidx.core.content.FileProvider"
+305-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:295:13-62
+306            android:authorities="com.rapido.provider.provider"
+306-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:296:13-60
+307            android:exported="false"
+307-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:297:13-37
+308            android:grantUriPermissions="true" >
+308-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:298:13-47
+309            <meta-data
+309-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:299:13-301:54
+310                android:name="android.support.FILE_PROVIDER_PATHS"
+310-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:300:17-67
+311                android:resource="@xml/file_paths" />
+311-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:301:17-51
+312        </provider>
+313
+314        <activity
+314-->[com.stripe:stripe-android:9.0.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/f7d0c40c61820bbbf38d6a81fdfbd5c1/jetified-stripe-android-9.0.1/AndroidManifest.xml:12:9-15:58
+315            android:name="com.stripe.android.view.AddSourceActivity"
+315-->[com.stripe:stripe-android:9.0.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/f7d0c40c61820bbbf38d6a81fdfbd5c1/jetified-stripe-android-9.0.1/AndroidManifest.xml:13:13-69
+316            android:theme="@style/StripeDefaultTheme"
+316-->[com.stripe:stripe-android:9.0.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/f7d0c40c61820bbbf38d6a81fdfbd5c1/jetified-stripe-android-9.0.1/AndroidManifest.xml:14:13-54
+317            android:windowSoftInputMode="stateVisible" />
+317-->[com.stripe:stripe-android:9.0.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/f7d0c40c61820bbbf38d6a81fdfbd5c1/jetified-stripe-android-9.0.1/AndroidManifest.xml:15:13-55
+318        <activity
+318-->[com.stripe:stripe-android:9.0.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/f7d0c40c61820bbbf38d6a81fdfbd5c1/jetified-stripe-android-9.0.1/AndroidManifest.xml:16:9-18:57
+319            android:name="com.stripe.android.view.PaymentMethodsActivity"
+319-->[com.stripe:stripe-android:9.0.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/f7d0c40c61820bbbf38d6a81fdfbd5c1/jetified-stripe-android-9.0.1/AndroidManifest.xml:17:13-74
+320            android:theme="@style/StripeDefaultTheme" />
+320-->[com.stripe:stripe-android:9.0.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/f7d0c40c61820bbbf38d6a81fdfbd5c1/jetified-stripe-android-9.0.1/AndroidManifest.xml:18:13-54
+321        <activity
+321-->[com.stripe:stripe-android:9.0.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/f7d0c40c61820bbbf38d6a81fdfbd5c1/jetified-stripe-android-9.0.1/AndroidManifest.xml:19:9-21:57
+322            android:name="com.stripe.android.view.PaymentFlowActivity"
+322-->[com.stripe:stripe-android:9.0.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/f7d0c40c61820bbbf38d6a81fdfbd5c1/jetified-stripe-android-9.0.1/AndroidManifest.xml:20:13-71
+323            android:theme="@style/StripeDefaultTheme" />
+323-->[com.stripe:stripe-android:9.0.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/f7d0c40c61820bbbf38d6a81fdfbd5c1/jetified-stripe-android-9.0.1/AndroidManifest.xml:21:13-54
+324        <activity
+324-->[com.stripe:stripe-android:9.0.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/f7d0c40c61820bbbf38d6a81fdfbd5c1/jetified-stripe-android-9.0.1/AndroidManifest.xml:22:9-24:57
+325            android:name="com.stripe.android.view.AuthWebViewActivity"
+325-->[com.stripe:stripe-android:9.0.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/f7d0c40c61820bbbf38d6a81fdfbd5c1/jetified-stripe-android-9.0.1/AndroidManifest.xml:23:13-71
+326            android:theme="@style/StripeDefaultTheme" />
+326-->[com.stripe:stripe-android:9.0.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/f7d0c40c61820bbbf38d6a81fdfbd5c1/jetified-stripe-android-9.0.1/AndroidManifest.xml:24:13-54
+327        <activity
+327-->[com.vincent.filepicker:MultiTypeFilePicker:1.0.8] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/78aa6f1246925a701c0989671992b2b5/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml:17:9-20:57
+328            android:name="com.vincent.filepicker.activity.ImagePickActivity"
+328-->[com.vincent.filepicker:MultiTypeFilePicker:1.0.8] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/78aa6f1246925a701c0989671992b2b5/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml:18:13-77
+329            android:screenOrientation="portrait"
+329-->[com.vincent.filepicker:MultiTypeFilePicker:1.0.8] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/78aa6f1246925a701c0989671992b2b5/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml:19:13-49
+330            android:theme="@style/vw_FilePickerTheme" />
+330-->[com.vincent.filepicker:MultiTypeFilePicker:1.0.8] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/78aa6f1246925a701c0989671992b2b5/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml:20:13-54
+331        <activity
+331-->[com.vincent.filepicker:MultiTypeFilePicker:1.0.8] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/78aa6f1246925a701c0989671992b2b5/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml:21:9-25:57
+332            android:name="com.vincent.filepicker.activity.ImageBrowserActivity"
+332-->[com.vincent.filepicker:MultiTypeFilePicker:1.0.8] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/78aa6f1246925a701c0989671992b2b5/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml:22:13-80
+333            android:hardwareAccelerated="false"
+333-->[com.vincent.filepicker:MultiTypeFilePicker:1.0.8] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/78aa6f1246925a701c0989671992b2b5/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml:23:13-48
+334            android:screenOrientation="portrait"
+334-->[com.vincent.filepicker:MultiTypeFilePicker:1.0.8] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/78aa6f1246925a701c0989671992b2b5/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml:24:13-49
+335            android:theme="@style/vw_FilePickerTheme" />
+335-->[com.vincent.filepicker:MultiTypeFilePicker:1.0.8] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/78aa6f1246925a701c0989671992b2b5/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml:25:13-54
+336        <activity
+336-->[com.vincent.filepicker:MultiTypeFilePicker:1.0.8] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/78aa6f1246925a701c0989671992b2b5/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml:26:9-29:57
+337            android:name="com.vincent.filepicker.activity.VideoPickActivity"
+337-->[com.vincent.filepicker:MultiTypeFilePicker:1.0.8] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/78aa6f1246925a701c0989671992b2b5/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml:27:13-77
+338            android:screenOrientation="portrait"
+338-->[com.vincent.filepicker:MultiTypeFilePicker:1.0.8] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/78aa6f1246925a701c0989671992b2b5/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml:28:13-49
+339            android:theme="@style/vw_FilePickerTheme" />
+339-->[com.vincent.filepicker:MultiTypeFilePicker:1.0.8] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/78aa6f1246925a701c0989671992b2b5/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml:29:13-54
+340        <activity
+340-->[com.vincent.filepicker:MultiTypeFilePicker:1.0.8] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/78aa6f1246925a701c0989671992b2b5/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml:30:9-33:57
+341            android:name="com.vincent.filepicker.activity.AudioPickActivity"
+341-->[com.vincent.filepicker:MultiTypeFilePicker:1.0.8] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/78aa6f1246925a701c0989671992b2b5/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml:31:13-77
+342            android:screenOrientation="portrait"
+342-->[com.vincent.filepicker:MultiTypeFilePicker:1.0.8] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/78aa6f1246925a701c0989671992b2b5/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml:32:13-49
+343            android:theme="@style/vw_FilePickerTheme" />
+343-->[com.vincent.filepicker:MultiTypeFilePicker:1.0.8] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/78aa6f1246925a701c0989671992b2b5/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml:33:13-54
+344        <activity
+344-->[com.vincent.filepicker:MultiTypeFilePicker:1.0.8] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/78aa6f1246925a701c0989671992b2b5/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml:34:9-37:57
+345            android:name="com.vincent.filepicker.activity.NormalFilePickActivity"
+345-->[com.vincent.filepicker:MultiTypeFilePicker:1.0.8] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/78aa6f1246925a701c0989671992b2b5/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml:35:13-82
+346            android:screenOrientation="portrait"
+346-->[com.vincent.filepicker:MultiTypeFilePicker:1.0.8] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/78aa6f1246925a701c0989671992b2b5/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml:36:13-49
+347            android:theme="@style/vw_FilePickerTheme" />
+347-->[com.vincent.filepicker:MultiTypeFilePicker:1.0.8] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/78aa6f1246925a701c0989671992b2b5/jetified-MultiTypeFilePicker-1.0.8/AndroidManifest.xml:37:13-54
+348        <activity
+348-->[com.facebook.android:account-kit-sdk:5.4.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/4393b289f1fd4de382c140884c78fd1d/jetified-account-kit-sdk-5.4.0/AndroidManifest.xml:35:9-38:40
+349            android:name="com.facebook.accountkit.ui.AccountKitEmailRedirectActivity"
+349-->[com.facebook.android:account-kit-sdk:5.4.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/4393b289f1fd4de382c140884c78fd1d/jetified-account-kit-sdk-5.4.0/AndroidManifest.xml:36:13-86
+350            android:exported="true"
+350-->[com.facebook.android:account-kit-sdk:5.4.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/4393b289f1fd4de382c140884c78fd1d/jetified-account-kit-sdk-5.4.0/AndroidManifest.xml:37:13-36
+351            android:noHistory="true" />
+351-->[com.facebook.android:account-kit-sdk:5.4.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/4393b289f1fd4de382c140884c78fd1d/jetified-account-kit-sdk-5.4.0/AndroidManifest.xml:38:13-37
+352        <!--
+353             The initialization ContentProvider will call AccountKit.initialize automatically
+354             with the application context. This config is merged in with the host app's manifest,
+355             but there can only be one provider with the same authority activated at any given
+356             point; so if the end user has two or more different apps that use AccountKit, only the
+357             first one will be able to use the provider. To work around this problem, we use the
+358             following placeholder in the authority to identify each host application as if it was
+359             a completely different provider.
+360        -->
+361        <provider
+361-->[com.facebook.android:account-kit-sdk:5.4.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/4393b289f1fd4de382c140884c78fd1d/jetified-account-kit-sdk-5.4.0/AndroidManifest.xml:49:9-52:40
+362            android:name="com.facebook.accountkit.internal.AccountKitInitProvider"
+362-->[com.facebook.android:account-kit-sdk:5.4.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/4393b289f1fd4de382c140884c78fd1d/jetified-account-kit-sdk-5.4.0/AndroidManifest.xml:50:13-83
+363            android:authorities="com.rapido.provider.AccountKitInitialization"
+363-->[com.facebook.android:account-kit-sdk:5.4.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/4393b289f1fd4de382c140884c78fd1d/jetified-account-kit-sdk-5.4.0/AndroidManifest.xml:51:13-76
+364            android:exported="false" />
+364-->[com.facebook.android:account-kit-sdk:5.4.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/4393b289f1fd4de382c140884c78fd1d/jetified-account-kit-sdk-5.4.0/AndroidManifest.xml:52:13-37
+365
+366        <activity
+366-->[pub.devrel:easypermissions:0.3.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/8c8bfa02ef0dfd57fccf8eb6b4b18271/jetified-easypermissions-0.3.0/AndroidManifest.xml:12:9-16:66
+367            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+367-->[pub.devrel:easypermissions:0.3.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/8c8bfa02ef0dfd57fccf8eb6b4b18271/jetified-easypermissions-0.3.0/AndroidManifest.xml:13:13-86
+368            android:exported="false"
+368-->[pub.devrel:easypermissions:0.3.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/8c8bfa02ef0dfd57fccf8eb6b4b18271/jetified-easypermissions-0.3.0/AndroidManifest.xml:14:13-37
+369            android:label=""
+369-->[pub.devrel:easypermissions:0.3.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/8c8bfa02ef0dfd57fccf8eb6b4b18271/jetified-easypermissions-0.3.0/AndroidManifest.xml:15:13-29
+370            android:theme="@style/EasyPermissions.Transparent" />
+370-->[pub.devrel:easypermissions:0.3.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/8c8bfa02ef0dfd57fccf8eb6b4b18271/jetified-easypermissions-0.3.0/AndroidManifest.xml:16:13-63
+371        <activity android:name="com.facebook.CustomTabMainActivity" />
+371-->[com.facebook.android:facebook-common:5.8.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/6ca055274c9379a5025b180694765c1e/jetified-facebook-common-5.8.0/AndroidManifest.xml:33:9-71
+371-->[com.facebook.android:facebook-common:5.8.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/6ca055274c9379a5025b180694765c1e/jetified-facebook-common-5.8.0/AndroidManifest.xml:33:19-68
+372        <activity
+372-->[com.google.android.gms:play-services-auth:17.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/2f60ff85fc6dc5c3ebf639b32abd91b0/play-services-auth-17.0.0/AndroidManifest.xml:23:9-27:75
+373            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+373-->[com.google.android.gms:play-services-auth:17.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/2f60ff85fc6dc5c3ebf639b32abd91b0/play-services-auth-17.0.0/AndroidManifest.xml:24:13-93
+374            android:excludeFromRecents="true"
+374-->[com.google.android.gms:play-services-auth:17.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/2f60ff85fc6dc5c3ebf639b32abd91b0/play-services-auth-17.0.0/AndroidManifest.xml:25:13-46
+375            android:exported="false"
+375-->[com.google.android.gms:play-services-auth:17.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/2f60ff85fc6dc5c3ebf639b32abd91b0/play-services-auth-17.0.0/AndroidManifest.xml:26:13-37
+376            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+376-->[com.google.android.gms:play-services-auth:17.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/2f60ff85fc6dc5c3ebf639b32abd91b0/play-services-auth-17.0.0/AndroidManifest.xml:27:13-72
+377        <!--
+378            Service handling Google Sign-In user revocation. For apps that do not integrate with
+379            Google Sign-In, this service will never be started.
+380        -->
+381        <service
+381-->[com.google.android.gms:play-services-auth:17.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/2f60ff85fc6dc5c3ebf639b32abd91b0/play-services-auth-17.0.0/AndroidManifest.xml:33:9-36:110
+382            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+382-->[com.google.android.gms:play-services-auth:17.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/2f60ff85fc6dc5c3ebf639b32abd91b0/play-services-auth-17.0.0/AndroidManifest.xml:34:13-89
+383            android:exported="true"
+383-->[com.google.android.gms:play-services-auth:17.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/2f60ff85fc6dc5c3ebf639b32abd91b0/play-services-auth-17.0.0/AndroidManifest.xml:35:13-36
+384            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+384-->[com.google.android.gms:play-services-auth:17.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/2f60ff85fc6dc5c3ebf639b32abd91b0/play-services-auth-17.0.0/AndroidManifest.xml:36:13-107
+385
+386        <activity
+386-->[com.google.firebase:firebase-auth:19.1.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/225098e44993747489dad169ca315268/firebase-auth-19.1.0/AndroidManifest.xml:24:9-31:50
+387            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+387-->[com.google.firebase:firebase-auth:19.1.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/225098e44993747489dad169ca315268/firebase-auth-19.1.0/AndroidManifest.xml:25:13-85
+388            android:excludeFromRecents="true"
+388-->[com.google.firebase:firebase-auth:19.1.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/225098e44993747489dad169ca315268/firebase-auth-19.1.0/AndroidManifest.xml:26:13-46
+389            android:exported="true"
+389-->[com.google.firebase:firebase-auth:19.1.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/225098e44993747489dad169ca315268/firebase-auth-19.1.0/AndroidManifest.xml:27:13-36
+390            android:launchMode="singleTask"
+390-->[com.google.firebase:firebase-auth:19.1.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/225098e44993747489dad169ca315268/firebase-auth-19.1.0/AndroidManifest.xml:28:13-44
+391            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+391-->[com.google.firebase:firebase-auth:19.1.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/225098e44993747489dad169ca315268/firebase-auth-19.1.0/AndroidManifest.xml:29:13-102
+392            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+392-->[com.google.firebase:firebase-auth:19.1.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/225098e44993747489dad169ca315268/firebase-auth-19.1.0/AndroidManifest.xml:30:13-72
+393
+394        <service
+394-->[com.google.firebase:firebase-auth:19.1.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/225098e44993747489dad169ca315268/firebase-auth-19.1.0/AndroidManifest.xml:33:9-39:19
+395            android:name="com.google.firebase.components.ComponentDiscoveryService"
+395-->[com.google.firebase:firebase-auth:19.1.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/225098e44993747489dad169ca315268/firebase-auth-19.1.0/AndroidManifest.xml:34:13-84
+396            android:exported="false" >
+396-->[com.google.firebase:firebase-auth:19.1.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/225098e44993747489dad169ca315268/firebase-auth-19.1.0/AndroidManifest.xml:35:13-37
+397            <meta-data
+397-->[com.google.firebase:firebase-auth:19.1.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/225098e44993747489dad169ca315268/firebase-auth-19.1.0/AndroidManifest.xml:36:13-38:85
+398                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+398-->[com.google.firebase:firebase-auth:19.1.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/225098e44993747489dad169ca315268/firebase-auth-19.1.0/AndroidManifest.xml:37:17-109
+399                android:value="com.google.firebase.components.ComponentRegistrar" />
+399-->[com.google.firebase:firebase-auth:19.1.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/225098e44993747489dad169ca315268/firebase-auth-19.1.0/AndroidManifest.xml:38:17-82
+400            <meta-data
+400-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/74fd1a7b1e5373fb6f3b290f693fddb7/play-services-measurement-api-17.2.1/AndroidManifest.xml:30:13-32:85
+401                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+401-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/74fd1a7b1e5373fb6f3b290f693fddb7/play-services-measurement-api-17.2.1/AndroidManifest.xml:31:17-139
+402                android:value="com.google.firebase.components.ComponentRegistrar" />
+402-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/74fd1a7b1e5373fb6f3b290f693fddb7/play-services-measurement-api-17.2.1/AndroidManifest.xml:32:17-82
+403            <meta-data
+403-->[com.google.firebase:firebase-iid:20.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/d1cce6815e05db58cb72095f7147e84f/firebase-iid-20.0.0/AndroidManifest.xml:32:13-34:85
+404                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+404-->[com.google.firebase:firebase-iid:20.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/d1cce6815e05db58cb72095f7147e84f/firebase-iid-20.0.0/AndroidManifest.xml:33:17-96
+405                android:value="com.google.firebase.components.ComponentRegistrar" />
+405-->[com.google.firebase:firebase-iid:20.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/d1cce6815e05db58cb72095f7147e84f/firebase-iid-20.0.0/AndroidManifest.xml:34:17-82
+406        </service>
+407        <!--
+408             FirebaseMessagingService performs security checks at runtime,
+409             but set to not exported to explicitly avoid allowing another app to call it.
+410        -->
+411        <service
+411-->[com.google.firebase:firebase-messaging:20.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/bad28ebe52f9269b48fd4ae846aa0b0c/jetified-firebase-messaging-20.0.0/AndroidManifest.xml:28:9-34:19
+412            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+412-->[com.google.firebase:firebase-messaging:20.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/bad28ebe52f9269b48fd4ae846aa0b0c/jetified-firebase-messaging-20.0.0/AndroidManifest.xml:29:13-82
+413            android:exported="false" >
+413-->[com.google.firebase:firebase-messaging:20.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/bad28ebe52f9269b48fd4ae846aa0b0c/jetified-firebase-messaging-20.0.0/AndroidManifest.xml:30:13-37
+414            <intent-filter android:priority="-500" >
+414-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:171:13-173:29
+415                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+415-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:172:17-78
+415-->/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/src/main/AndroidManifest.xml:172:25-75
+416            </intent-filter>
+417        </service>
+418
+419        <receiver
+419-->[com.google.firebase:firebase-iid:20.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/d1cce6815e05db58cb72095f7147e84f/firebase-iid-20.0.0/AndroidManifest.xml:37:9-44:20
+420            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+420-->[com.google.firebase:firebase-iid:20.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/d1cce6815e05db58cb72095f7147e84f/firebase-iid-20.0.0/AndroidManifest.xml:38:13-78
+421            android:exported="true"
+421-->[com.google.firebase:firebase-iid:20.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/d1cce6815e05db58cb72095f7147e84f/firebase-iid-20.0.0/AndroidManifest.xml:39:13-36
+422            android:permission="com.google.android.c2dm.permission.SEND" >
+422-->[com.google.firebase:firebase-iid:20.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/d1cce6815e05db58cb72095f7147e84f/firebase-iid-20.0.0/AndroidManifest.xml:40:13-73
+423            <intent-filter>
+423-->[com.google.firebase:firebase-iid:20.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/d1cce6815e05db58cb72095f7147e84f/firebase-iid-20.0.0/AndroidManifest.xml:41:13-43:29
+424                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+424-->[com.google.firebase:firebase-iid:20.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/d1cce6815e05db58cb72095f7147e84f/firebase-iid-20.0.0/AndroidManifest.xml:42:17-81
+424-->[com.google.firebase:firebase-iid:20.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/d1cce6815e05db58cb72095f7147e84f/firebase-iid-20.0.0/AndroidManifest.xml:42:25-78
+425            </intent-filter>
+426        </receiver>
+427
+428        <activity
+428-->[com.google.android.gms:play-services-base:17.1.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/ec5268840c3497f4a3759593f74b7958/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+429            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+429-->[com.google.android.gms:play-services-base:17.1.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/ec5268840c3497f4a3759593f74b7958/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+430            android:exported="false"
+430-->[com.google.android.gms:play-services-base:17.1.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/ec5268840c3497f4a3759593f74b7958/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+431            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+431-->[com.google.android.gms:play-services-base:17.1.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/ec5268840c3497f4a3759593f74b7958/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+432
+433        <meta-data
+433-->[com.google.maps.android:android-maps-utils:0.6.2] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/0f5fe32cced5c29031773d9a2e1873fd/android-maps-utils-0.6.2/AndroidManifest.xml:12:9-14:69
+434            android:name="com.google.android.gms.version"
+434-->[com.google.maps.android:android-maps-utils:0.6.2] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/0f5fe32cced5c29031773d9a2e1873fd/android-maps-utils-0.6.2/AndroidManifest.xml:13:13-58
+435            android:value="@integer/google_play_services_version" />
+435-->[com.google.maps.android:android-maps-utils:0.6.2] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/0f5fe32cced5c29031773d9a2e1873fd/android-maps-utils-0.6.2/AndroidManifest.xml:14:13-66
+436
+437        <provider
+437-->[com.squareup.picasso:picasso:2.71828] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/bbbce3ebe7f888b6a16a889b78b1cdaa/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+438            android:name="com.squareup.picasso.PicassoProvider"
+438-->[com.squareup.picasso:picasso:2.71828] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/bbbce3ebe7f888b6a16a889b78b1cdaa/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+439            android:authorities="com.rapido.provider.com.squareup.picasso"
+439-->[com.squareup.picasso:picasso:2.71828] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/bbbce3ebe7f888b6a16a889b78b1cdaa/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+440            android:exported="false" />
+440-->[com.squareup.picasso:picasso:2.71828] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/bbbce3ebe7f888b6a16a889b78b1cdaa/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+441        <provider
+441-->[com.google.firebase:firebase-common:19.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/99b899701b1b2b5e548fadbdc5cdd319/firebase-common-19.0.0/AndroidManifest.xml:12:9-16:39
+442            android:name="com.google.firebase.provider.FirebaseInitProvider"
+442-->[com.google.firebase:firebase-common:19.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/99b899701b1b2b5e548fadbdc5cdd319/firebase-common-19.0.0/AndroidManifest.xml:13:13-77
+443            android:authorities="com.rapido.provider.firebaseinitprovider"
+443-->[com.google.firebase:firebase-common:19.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/99b899701b1b2b5e548fadbdc5cdd319/firebase-common-19.0.0/AndroidManifest.xml:14:13-72
+444            android:exported="false"
+444-->[com.google.firebase:firebase-common:19.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/99b899701b1b2b5e548fadbdc5cdd319/firebase-common-19.0.0/AndroidManifest.xml:15:13-37
+445            android:initOrder="100" />
+445-->[com.google.firebase:firebase-common:19.0.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/99b899701b1b2b5e548fadbdc5cdd319/firebase-common-19.0.0/AndroidManifest.xml:16:13-36
+446
+447        <receiver
+447-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:29:9-33:20
+448            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+448-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:30:13-85
+449            android:enabled="true"
+449-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:31:13-35
+450            android:exported="false" >
+450-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:32:13-37
+451        </receiver>
+452        <receiver
+452-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:34:9-42:20
+453            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+453-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:35:13-100
+454            android:enabled="true"
+454-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:36:13-35
+455            android:exported="true"
+455-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:37:13-36
+456            android:permission="android.permission.INSTALL_PACKAGES" >
+456-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:38:13-69
+457            <intent-filter>
+457-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:39:13-41:29
+458                <action android:name="com.android.vending.INSTALL_REFERRER" />
+458-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:40:17-79
+458-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:40:25-76
+459            </intent-filter>
+460        </receiver>
+461
+462        <service
+462-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:44:9-47:40
+463            android:name="com.google.android.gms.measurement.AppMeasurementService"
+463-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:45:13-84
+464            android:enabled="true"
+464-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:46:13-35
+465            android:exported="false" />
+465-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:47:13-37
+466        <service
+466-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:48:9-52:72
+467            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+467-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:49:13-87
+468            android:enabled="true"
+468-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:50:13-35
+469            android:exported="false"
+469-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:51:13-37
+470            android:permission="android.permission.BIND_JOB_SERVICE" />
+470-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:52:13-69
+471        <!--
+472         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+473         with the application context. This config is merged in with the host app's manifest,
+474         but there can only be one provider with the same authority activated at any given
+475         point; so if the end user has two or more different apps that use Facebook SDK, only the
+476         first one will be able to use the provider. To work around this problem, we use the
+477         following placeholder in the authority to identify each host application as if it was
+478         a completely different provider.
+479        -->
+480        <provider
+480-->[com.facebook.android:facebook-core:5.8.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/8f3a4ff52b72cc96c15619e19eb13161/jetified-facebook-core-5.8.0/AndroidManifest.xml:39:9-42:40
+481            android:name="com.facebook.internal.FacebookInitProvider"
+481-->[com.facebook.android:facebook-core:5.8.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/8f3a4ff52b72cc96c15619e19eb13161/jetified-facebook-core-5.8.0/AndroidManifest.xml:40:13-70
+482            android:authorities="com.rapido.provider.FacebookInitProvider"
+482-->[com.facebook.android:facebook-core:5.8.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/8f3a4ff52b72cc96c15619e19eb13161/jetified-facebook-core-5.8.0/AndroidManifest.xml:41:13-72
+483            android:exported="false" />
+483-->[com.facebook.android:facebook-core:5.8.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/8f3a4ff52b72cc96c15619e19eb13161/jetified-facebook-core-5.8.0/AndroidManifest.xml:42:13-37
+484
+485        <receiver
+485-->[com.facebook.android:facebook-core:5.8.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/8f3a4ff52b72cc96c15619e19eb13161/jetified-facebook-core-5.8.0/AndroidManifest.xml:44:9-50:20
+486            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+486-->[com.facebook.android:facebook-core:5.8.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/8f3a4ff52b72cc96c15619e19eb13161/jetified-facebook-core-5.8.0/AndroidManifest.xml:45:13-86
+487            android:exported="false" >
+487-->[com.facebook.android:facebook-core:5.8.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/8f3a4ff52b72cc96c15619e19eb13161/jetified-facebook-core-5.8.0/AndroidManifest.xml:46:13-37
+488            <intent-filter>
+488-->[com.facebook.android:facebook-core:5.8.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/8f3a4ff52b72cc96c15619e19eb13161/jetified-facebook-core-5.8.0/AndroidManifest.xml:47:13-49:29
+489                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+489-->[com.facebook.android:facebook-core:5.8.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/8f3a4ff52b72cc96c15619e19eb13161/jetified-facebook-core-5.8.0/AndroidManifest.xml:48:17-95
+489-->[com.facebook.android:facebook-core:5.8.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/8f3a4ff52b72cc96c15619e19eb13161/jetified-facebook-core-5.8.0/AndroidManifest.xml:48:25-92
+490            </intent-filter>
+491        </receiver>
+492        <receiver
+492-->[com.facebook.android:facebook-core:5.8.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/8f3a4ff52b72cc96c15619e19eb13161/jetified-facebook-core-5.8.0/AndroidManifest.xml:51:9-58:20
+493            android:name="com.facebook.CampaignTrackingReceiver"
+493-->[com.facebook.android:facebook-core:5.8.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/8f3a4ff52b72cc96c15619e19eb13161/jetified-facebook-core-5.8.0/AndroidManifest.xml:52:13-65
+494            android:exported="true"
+494-->[com.facebook.android:facebook-core:5.8.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/8f3a4ff52b72cc96c15619e19eb13161/jetified-facebook-core-5.8.0/AndroidManifest.xml:53:13-36
+495            android:permission="android.permission.INSTALL_PACKAGES" >
+495-->[com.facebook.android:facebook-core:5.8.0] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/8f3a4ff52b72cc96c15619e19eb13161/jetified-facebook-core-5.8.0/AndroidManifest.xml:54:13-69
+496            <intent-filter>
+496-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:39:13-41:29
+497                <action android:name="com.android.vending.INSTALL_REFERRER" />
+497-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:40:17-79
+497-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/60d931743ff00b2a915f813e6021c755/play-services-measurement-17.2.1/AndroidManifest.xml:40:25-76
+498            </intent-filter>
+499        </receiver>
+500
+501        <provider
+501-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/cb5835cffc0122a71fc86f8e145fa2c3/jetified-crashlytics-2.10.1/AndroidManifest.xml:19:9-23:38
+502            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+502-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/cb5835cffc0122a71fc86f8e145fa2c3/jetified-crashlytics-2.10.1/AndroidManifest.xml:20:13-75
+503            android:authorities="com.rapido.provider.crashlyticsinitprovider"
+503-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/cb5835cffc0122a71fc86f8e145fa2c3/jetified-crashlytics-2.10.1/AndroidManifest.xml:21:13-75
+504            android:exported="false"
+504-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/cb5835cffc0122a71fc86f8e145fa2c3/jetified-crashlytics-2.10.1/AndroidManifest.xml:22:13-37
+505            android:initOrder="90" />
+505-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/cb5835cffc0122a71fc86f8e145fa2c3/jetified-crashlytics-2.10.1/AndroidManifest.xml:23:13-35
+506    </application>
+507
+508</manifest>

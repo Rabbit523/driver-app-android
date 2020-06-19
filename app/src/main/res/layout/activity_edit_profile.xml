@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/text_color_white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_190sdp"
+                android:layout_gravity="start"
+                android:background="@color/colorPrimary"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/backArrow"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/ic_back_icon"
+                        android:backgroundTint="@color/text_color_white"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center_vertical"
+                        android:text="@string/edit_profile"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+                <com.rapido.provider.Transportation.Utilities.MyTextView
+                    android:id="@+id/txtHeaderName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:text="Rajan Kumar"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="@dimen/_15sdp" />
+
+                <com.rapido.provider.Transportation.Utilities.MyTextView
+                    android:id="@+id/txtHeaderMob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:text="+917277834909"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="@dimen/_11sdp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="@dimen/_64sdp"
+                    android:layout_height="@dimen/_64sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:src="@drawable/ic_dummy_user"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="1dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_color="#FFFFFF"
+                    app:civ_shadow_radius="10" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:cardBackgroundColor="@color/text_color_white">
+            <LinearLayout
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/cancel_ride_color"/>
+                <LinearLayout
+                    android:id="@+id/layoutName"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="@dimen/_14sdp"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:drawableTint="@color/calbg"
+                        android:text="Name"
+                        />
+                    <TextView
+                        android:id="@+id/first_name"
+                        android:textSize="@dimen/_13sdp"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Name"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/cancel_ride_color"/>
+
+
+                <LinearLayout
+                    android:id="@+id/layoutAddress"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="@dimen/_14sdp"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:drawableTint="@color/calbg"
+                        android:text="Email"
+                        />
+                    <TextView
+                      android:id="@+id/email"
+                        android:textSize="@dimen/_13sdp"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Name"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/cancel_ride_color"/>
+
+                <LinearLayout
+                    android:id="@+id/layoutMobile"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="@dimen/_14sdp"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:drawableTint="@color/calbg"
+                        android:text="@string/mobile"
+                        />
+                    <TextView
+                        android:id="@+id/mobile_no"
+                        android:textSize="@dimen/_13sdp"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Name"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/cancel_ride_color"/>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/layoutService"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp">
+
+                    <com.rapido.provider.Transportation.Utilities.MyTextView
+                        android:drawableLeft="@drawable/ic_name"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+
+                        android:textColor="@color/white"
+                        android:drawableTint="@color/done_disabled_dark"
+                        android:layout_height="wrap_content"
+                        android:text="Service type"
+                        />
+                    <com.rapido.provider.Transportation.Utilities.MyEditText
+                        android:id="@+id/service"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:maxLines="1"
+                        android:textColor="@color/silgray"
+                        android:drawableRight="@drawable/right"
+                        android:textSize="@dimen/_11sdp"
+                        android:layout_weight="1"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:gravity="center_vertical|right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/_15sdp"
+                        android:text=""
+                        />
+                </LinearLayout>
+                <View
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/colorAccent"/>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/layoutUpdatePwd"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp">
+
+                    <com.rapido.provider.Transportation.Utilities.MyTextView
+                        android:drawableLeft="@drawable/ic_password"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+
+                        android:textColor="@color/white"
+                        android:drawableTint="@color/cancel_ride_color"
+                        android:layout_height="wrap_content"
+                        android:text="Update Password"
+                        />
+                    <com.rapido.provider.Transportation.Utilities.MyTextView
+                        android:id="@+id/changePasswordTxt"
+                        android:drawableRight="@drawable/right"
+                        android:textSize="@dimen/_11sdp"
+                        android:layout_weight="2"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:gravity="center_vertical|right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/_15sdp"
+                        android:text=""
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_44sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            >
+            <Switch
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_44sdp"
+
+                android:drawablePadding="@dimen/_15sdp"
+                android:fontFamily="@font/montserrat_regular"
+
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/white"
+                android:drawableTint="@color/white"
+                android:background="@drawable/bggradient"
+                android:checked="true"
+                android:drawableLeft="@drawable/ic_notifications"
+                android:text="Notifications"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+            <com.rapido.provider.Transportation.Utilities.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_44sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:background="@drawable/bggradient"
+                android:gravity="center"
+                android:text="Log Out"/>
+        </androidx.cardview.widget.CardView>
+
+        <com.rapido.provider.Transportation.Utilities.MyButton
+        android:id="@+id/saveBTN"
+            android:visibility="gone"
+        android:text="Update"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:background="@color/theme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        />
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/activity_edit_profile"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?actionBarSize"-->
+        <!--android:background="@android:color/transparent">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/backArrow"-->
+            <!--android:src="@drawable/back_white"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:padding="5dp"/>-->
+
+        <!--<com.booknwin.provider.Transportation.Utilities.MyBoldTextView-->
+            <!--android:text="Profile"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textSize="18sp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--android:id="@+id/img_profile"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:src="@drawable/ic_dummy_user"-->
+            <!--app:civ_border_color="#FFFFFF"-->
+            <!--app:civ_border_width="4dp"-->
+            <!--app:civ_shadow="true"-->
+            <!--app:civ_shadow_radius="10"-->
+            <!--app:civ_shadow_color="#FFFFFF"/>-->
+
+        <!--<View-->
+            <!--android:id="@+id/line_devider"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@android:color/darker_gray"/>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<com.booknwin.provider.Transportation.Utilities.MyTextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:text="@string/first_name"/>-->
+
+
+                <!--<com.booknwin.provider.Transportation.Utilities.MyEditText-->
+                        <!--android:id="@+id/first_name"-->
+                        <!--android:textSize="14sp"-->
+                        <!--android:textColor="@android:color/black"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:inputType="textCapWords"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:background="@null"-->
+                        <!--android:imeOptions="actionDone"-->
+                        <!--android:maxLines="1" />-->
+
+            <!--</LinearLayout>-->
+            <!--<View-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@android:color/darker_gray"/>-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<com.booknwin.provider.Transportation.Utilities.MyTextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:text="@string/last_name"/>-->
+
+
+                <!--<com.booknwin.provider.Transportation.Utilities.MyEditText-->
+                        <!--android:id="@+id/last_name"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textSize="14sp"-->
+                        <!--android:textColor="@android:color/black"-->
+                        <!--android:inputType="text|textCapSentences"-->
+                        <!--android:imeOptions="actionDone"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:background="@null"-->
+                        <!--android:maxLines="1" />-->
+
+
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@android:color/darker_gray"/>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<com.booknwin.provider.Transportation.Utilities.MyTextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="16sp"-->
+                <!--android:text="@string/phone_number"/>-->
+
+
+            <!--<com.booknwin.provider.Transportation.Utilities.MyEditText-->
+                    <!--android:id="@+id/mobile_no"-->
+                    <!--android:inputType="phone"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:textColor="@android:color/black"-->
+                    <!--android:imeOptions="actionDone"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@null"-->
+                    <!--android:maxLines="1" />-->
+
+
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@android:color/darker_gray"/>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<com.booknwin.provider.Transportation.Utilities.MyTextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="16sp"-->
+                <!--android:text="@string/email"/>-->
+
+            <!--<com.booknwin.provider.Transportation.Utilities.MyEditText-->
+                    <!--android:id="@+id/email"-->
+                    <!--android:inputType="textEmailAddress"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:textColor="@android:color/black"-->
+                    <!--android:imeOptions="actionNext"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:background="@null"-->
+                    <!--android:enabled="false"-->
+                    <!--android:maxLines="1" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@android:color/darker_gray" />-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<com.booknwin.provider.Transportation.Utilities.MyTextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="16sp"-->
+                <!--android:text="@string/service" />-->
+
+            <!--<com.booknwin.provider.Transportation.Utilities.MyEditText-->
+                <!--android:id="@+id/service"-->
+                <!--android:inputType="textEmailAddress"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="14sp"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:imeOptions="actionNext"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@null"-->
+                <!--android:enabled="false"-->
+                <!--android:maxLines="1" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@android:color/darker_gray"/>-->
+
+        <!--<com.booknwin.provider.Transportation.Utilities.MyButton-->
+            <!--android:id="@+id/saveBTN"-->
+            <!--android:text="@string/save"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="18dp"-->
+            <!--android:background="@android:color/black"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_margin="20dp"-->
+            <!--/>-->
+
+        <!--<com.booknwin.provider.Transportation.Utilities.MyTextView-->
+            <!--android:id="@+id/changePasswordTxt"-->
+            <!--android:text="@string/change_password"-->
+            <!--android:textColor="@android:color/holo_blue_light"-->
+            <!--android:textSize="16dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+<!--</LinearLayout>-->

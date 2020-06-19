@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="@dimen/_84sdp"
+        android:layout_height="@dimen/_84sdp"
+        android:layout_gravity="center_horizontal|center_vertical"
+
+        android:background="@drawable/ic_driver" />
+
+    <com.rapido.provider.Transportation.Utilities.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/waitingForApproval"
+
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/txt_WaitingForApproval" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.rapido.provider.Transportation.Utilities.MyButton
+            android:id="@+id/logoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="@drawable/bggradient"
+            android:padding="@dimen/button_padding"
+            android:text="OK"
+            android:textColor="@color/button_text_color" />
+    </LinearLayout>
+</LinearLayout>

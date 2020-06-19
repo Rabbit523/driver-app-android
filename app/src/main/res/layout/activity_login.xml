@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+            android:text="@string/driver"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_24sdp"
+            tools:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:src="@drawable/appicon" />
+
+        <LinearLayout
+            android:id="@+id/viewLoginLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_96sdp"
+            android:layout_centerVertical="true"
+
+            android:background="@drawable/middle_box"
+            android:orientation="vertical">
+
+
+            <com.rapido.provider.Transportation.Utilities.MyEditText
+                android:id="@+id/etEmail"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:backgroundTint="@color/transparent"
+                android:drawableLeft="@drawable/ic_user_name"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="@string/email"
+                android:textColorHint="@color/black"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/_8sdp"
+                android:textSize="@dimen/_14sdp" />
+
+            <View
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#f2f2f2" />
+
+
+            <com.rapido.provider.Transportation.Utilities.MyEditText
+
+                android:id="@+id/etPassword"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/transparent"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="@dimen/_7sdp"
+                android:hint="@string/password"
+                android:textColorHint="@color/black"
+                android:paddingLeft="@dimen/_8sdp"
+                android:inputType="textPassword"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/round_shape"
+            android:text="OK"
+            android:textColor="@color/white" />
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:gravity="right"-->
+            <!--android:visibility="visible">-->
+            <!---->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/btnLogin"-->
+                <!--android:layout_width="@dimen/_48sdp"-->
+                <!--android:layout_height="@dimen/_48sdp"-->
+                <!--android:background="@drawable/round_shape"-->
+                <!--android:src="@drawable/right_arrow_new" />-->
+
+        <!--</LinearLayout>-->
+
+        <com.rapido.provider.Transportation.Utilities.MyTextView
+            android:id="@+id/txtForget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginEnd="21dp"
+            android:layout_below="@+id/viewLoginLayout"
+
+            android:gravity="center"
+            android:text="@string/i_forgot_my_password" />
+
+        <LinearLayout
+            android:id="@+id/registerLayout"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_65sdp"
+            android:layout_below="@+id/viewLoginLayout"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_65sdp"
+
+            android:background="@drawable/box_registration"
+            android:backgroundTint="@color/colorPrimary">
+
+            <com.rapido.provider.Transportation.Utilities.MyBoldTextView
+                android:id="@+id/txtSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/resgist"
+                android:textColor="@color/recyclerview_item_background"
+                android:textSize="@dimen/_15sdp" />
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/_5sdp"
+
+        android:orientation="vertical">
+
+        <!--<com.mbeba.user.Utils.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or signin with"
+            android:textSize="@dimen/_13sdp"/>-->
+
+        <LinearLayout
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btnGoogle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:drawableEnd="@drawable/ic_google"
+                android:drawablePadding="@dimen/_5sdp"
+                android:gravity="center|end"
+                android:text="Login with Google"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/btnFb"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:drawableEnd="@drawable/ic_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Login with Facebook"
+                android:gravity="center|end" />
+            <!--<Button-->
+            <!--android:gravity="end"-->
+            <!--android:id="@+id/btnFb"-->
+            <!--android:layout_width="@dimen/_42sdp"-->
+            <!--android:layout_height="@dimen/_42sdp"-->
+            <!--android:background="@drawable/ic_fb"/>-->
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

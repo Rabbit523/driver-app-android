@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_44sdp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="center"
+        android:text="@string/reason_to_cancel"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp" />
+
+    <RadioGroup
+        android:id="@+id/radioCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="@dimen/_14sdp">
+
+        <RadioButton
+            android:id="@+id/driver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/plan_changed"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <RadioButton
+            android:id="@+id/vehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/booked_another_cab"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <RadioButton
+            android:id="@+id/app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/my_reason_is_not_listed"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+        <!--<RadioButton-->
+        <!--android:id="@+id/moving"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="@dimen/_12sdp"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:fontFamily="@font/montserrat_medium"-->
+        <!--android:text="@string/driver_is_not_moving"/>-->
+        <!--<RadioButton-->
+        <!--android:id="@+id/denied"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="@dimen/_12sdp"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:fontFamily="@font/montserrat_medium"-->
+        <!--android:text="@string/driver_denied_to_come"/>-->
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/reason_etxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="@string/andwhy"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_44sdp"
+
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp" />
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,76 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/appledz/Desktop/rapido 2020/codecanyon-JabmBfOd-thinkin-cab-bike-book-car-bike-auto-full-custom-code/Aio/iLfyt-Source-Code 2/Android/Driver-App/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/16070a4542adf0185576c75da89d6d9e/core-1.1.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/4393b289f1fd4de382c140884c78fd1d/jetified-account-kit-sdk-5.4.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2,5,8,11,14",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,215,358,510,652",
+                        "endLines": "4,7,10,13,16",
+                        "endColumns": "12,12,12,12,12",
+                        "endOffsets": "210,353,505,647,795"
+                    },
+                    "to": {
+                        "startLines": "4,7,10,13,16",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "193,353,496,648,790",
+                        "endLines": "6,9,12,15,18",
+                        "endColumns": "12,12,12,12,12",
+                        "endOffsets": "348,491,643,785,933"
+                    }
+                },
+                {
+                    "source": "/Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/2728fbb328c79b3a2343a10d141cccb4/appcompat-1.1.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "19",
+                        "startColumns": "4",
+                        "startOffsets": "938",
+                        "endLines": "22",
+                        "endColumns": "12",
+                        "endOffsets": "1106"
+                    }
+                },
+                {
+                    "source": "/Users/appledz/.gradle/wrapper/dists/gradle-5.4.1-all/3221gyojl5jsh0helicew7rwx/gradle-5.4.1/caches/transforms-2/files-2.1/4ab8a1489060208f669e5644d6871154/jetified-datetimepicker-0.3.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2,3,6,9",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,127,255,369",
+                        "endLines": "2,5,8,11",
+                        "endColumns": "71,12,12,12",
+                        "endOffsets": "122,250,364,476"
+                    },
+                    "to": {
+                        "startLines": "3,23,26,29",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "121,1111,1239,1353",
+                        "endLines": "3,25,28,31",
+                        "endColumns": "71,12,12,12",
+                        "endOffsets": "188,1234,1348,1460"
+                    }
+                }
+            ]
+        }
+    ]
+}

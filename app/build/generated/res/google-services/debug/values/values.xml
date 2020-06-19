@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">861011711984-ke38fjmqnqjoe2h9emobl4tnenp6hfa1.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://ilyft-driver.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">861011711984</string>
+    <string name="google_api_key" translatable="false">AIzaSyBQ6vJfVvYl78f-092dYgRxodUwm4W4rTQ</string>
+    <string name="google_app_id" translatable="false">1:861011711984:android:7931c48a7726c190876f35</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBQ6vJfVvYl78f-092dYgRxodUwm4W4rTQ</string>
+    <string name="google_storage_bucket" translatable="false">ilyft-driver.appspot.com</string>
+    <string name="project_id" translatable="false">ilyft-driver</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9ccb3d</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#ffdd59</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="transaprent">#00000000</color>
+    <color name="theme">#000000</color>
+    <color name="color_tint">#000000</color>
+    <color name="colorPrimaryTrans">#0D00B43F</color>
+    <color name="nav_body">#ffffff</color>
+    <color name="menu_color">#9ccb3d</color>
+    <color name="light_black_txt">#444444</color>
+    <color name="text_color_white">#ffffff</color>
+    <color name="button_text_color">#ffffff</color>
+    <color name="black_text_color">#df000000</color>
+    <color name="view_bg">#1A1A1A</color>
+    <color name="view_grey_bg">#d2d2d2</color>
+    <color name="view_grey_bg_">#e9e8e8</color>
+
+    <!-- EditText inside effect color -->
+    <color name="cancel_ride_color">#B0B0B0</color>
+    <color name="test">#f5f5f5</color>
+    <color name="silgray">#f4f6f8</color>
+    <color name="cpb_white">@android:color/white</color>
+
+    <color name="calbg">#016e1c</color>
+
+
+
+
+
+    <color name="line_background">#cccccc</color>
+    <!-- Navigation drawer Customization-->
+    <color name="content_background">#ffffff</color>
+    <color name="timer_text_color">#ffffff</color>
+    <color name="view_light">#808080</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="red">#f44236</color>
+    <color name="blue">#3e70c9</color>
+    <color name="green">#00B22D</color>
+
+    <color name="text_grey">#C8C7CC</color>
+    <color name="recyclerview_background">#f2f3f5 </color>
+    <color name="recyclerview_item_background">#f7f7f7  </color>
+    <color name="recyclerview_item_text">#bec2ce   </color>
+</resources>

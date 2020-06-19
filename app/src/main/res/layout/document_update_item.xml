@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cardview_shadow_end_color"
+    android:layout_marginBottom="@dimen/_2sdp"
+    android:orientation="horizontal"
+
+    >
+    <LinearLayout
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+    <ImageView
+        android:id="@+id/imgDoc"
+        android:layout_width="@dimen/_64sdp"
+        android:layout_height="@dimen/_64sdp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+         <TextView
+             android:id="@+id/txtDocumentsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_10sdp"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:text="Document Name"/>
+        <TextView
+            android:id="@+id/txtSatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/green"
+            android:text="Status"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:gravity="end"
+        android:fontFamily="@font/montserrat_semibold"/>
+    </LinearLayout>
+</LinearLayout>

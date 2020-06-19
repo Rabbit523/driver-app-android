@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/_10sdp">
+
+         <ImageView
+             android:id="@+id/backArrow"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:padding="5dp"
+             android:src="@drawable/back_white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/earned_amount"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <!--Views for withdraw-->
+    <LinearLayout
+        android:layout_gravity="center"
+        android:id="@+id/layoutMainId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--   <android.support.v7.widget.RecyclerView
+
+            android:layout_marginTop="@dimen/_1sdp"
+            android:id="@+id/recycler_viewServiceType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />-->
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingLeft="@dimen/_1sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:gravity="center"
+                android:text="@string/earned_money"
+                android:textColor="@color/black_text_color"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/earnedMoneyTxtView"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:gravity="left"
+
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_16sdp" />
+
+
+            <Button
+
+                android:layout_weight="1"
+                android:id="@+id/addAccountDetailsBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:text="@string/withdraw"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+           <View
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/past_withdraw"
+            android:textColor="@color/black_text_color"
+            android:textSize="@dimen/_16sdp" />
+     <!--   <View
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />-->
+
+
+        <androidx.cardview.widget.CardView
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="1dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="@string/amount"
+                android:textColor="@color/button_text_color" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="@string/date"
+                android:textColor="@color/button_text_color" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="@string/status"
+                android:textColor="@color/button_text_color" />
+
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerWithdraw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:scrollbars="vertical" />
+
+
+        <!--<LinearLayout
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <tuamiprovider.Utilities.MyBoldTextView
+                android:layout_weight=".4"
+                android:id="@+id/familyTxtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_amount"
+                android:textColor="@color/black_text_color"
+                android:textSize="16sp" />
+
+
+            <EditText
+
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight=".3"
+                android:id="@+id/amountEditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:hint="$0.0"
+                android:inputType="numberDecimal"
+
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+
+
+            <tuamiprovider.Utilities.MyButton
+
+                android:paddingLeft="@dimen/_2sdp"
+                android:paddingRight="@dimen/_2sdp"
+               android:background="@color/colorPrimary"
+                android:id="@+id/addAmountBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/add"
+                android:textSize="16sp" />
+
+        </LinearLayout>-->
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
